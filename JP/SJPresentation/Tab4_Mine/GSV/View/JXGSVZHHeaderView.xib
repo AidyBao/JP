@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JXGSVZHHeaderView" customModule="gold" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7K-bv-SId">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JX_startJoy_4" translatesAutoresizingMaskIntoConstraints="NO" id="fsE-n6-5nR">
+                            <rect key="frame" x="15" y="20.5" width="6" height="12"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9v-BJ-Lbd">
+                            <rect key="frame" x="26" y="18" width="57.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yco-Uj-NAu">
+                            <rect key="frame" x="0.0" y="52" width="414" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="lYf-Vk-ybf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="fsE-n6-5nR" firstAttribute="leading" secondItem="k7K-bv-SId" secondAttribute="leading" constant="15" id="B06-f2-0qx"/>
+                        <constraint firstAttribute="bottom" secondItem="yco-Uj-NAu" secondAttribute="bottom" id="DEm-NQ-LvB"/>
+                        <constraint firstAttribute="trailing" secondItem="yco-Uj-NAu" secondAttribute="trailing" id="Mt6-wU-cNL"/>
+                        <constraint firstItem="yco-Uj-NAu" firstAttribute="leading" secondItem="k7K-bv-SId" secondAttribute="leading" id="ikQ-OK-IcR"/>
+                        <constraint firstItem="X9v-BJ-Lbd" firstAttribute="leading" secondItem="fsE-n6-5nR" secondAttribute="trailing" constant="5" id="oSQ-cv-aqc"/>
+                        <constraint firstItem="X9v-BJ-Lbd" firstAttribute="centerY" secondItem="k7K-bv-SId" secondAttribute="centerY" id="qQQ-jQ-VUS"/>
+                        <constraint firstItem="X9v-BJ-Lbd" firstAttribute="centerY" secondItem="fsE-n6-5nR" secondAttribute="centerY" id="tSL-R4-DDB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="k7K-bv-SId" secondAttribute="trailing" id="MA4-Sw-Xu3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="k7K-bv-SId" secondAttribute="bottom" id="VWn-AP-Edl"/>
+                <constraint firstItem="k7K-bv-SId" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VpD-oN-3RW"/>
+                <constraint firstItem="k7K-bv-SId" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="p7p-ep-fmJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="geliView" destination="yco-Uj-NAu" id="u1u-EF-Klz"/>
+                <outlet property="lb" destination="X9v-BJ-Lbd" id="xR7-7O-TyW"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="315.06696428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="JX_startJoy_4" width="6" height="12"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

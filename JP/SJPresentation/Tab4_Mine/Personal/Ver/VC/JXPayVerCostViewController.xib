@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JXPayVerCostViewController" customModule="gold" customModuleProvider="target">
+            <connections>
+                <outlet property="cardImg" destination="V74-tz-U25" id="xCm-MC-0KO"/>
+                <outlet property="cardView" destination="9w1-bK-aUW" id="B7q-kD-uTd"/>
+                <outlet property="lb1" destination="mHF-Iz-wbC" id="c0T-fE-ugA"/>
+                <outlet property="shuomlb" destination="uMX-WT-roS" id="TDP-G2-9NX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wxBtn" destination="1Ar-Lb-tek" id="BM3-CA-gAO"/>
+                <outlet property="zfbBtn" destination="cdv-e8-9tL" id="tMM-PR-ACR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMX-WT-roS">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9w1-bK-aUW">
+                    <rect key="frame" x="15" y="38" width="384" height="220"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实名认证完成后即可免费获取聚星卡一张" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHF-Iz-wbC">
+                            <rect key="frame" x="54.5" y="10" width="275.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jx_shiming_levle1" translatesAutoresizingMaskIntoConstraints="NO" id="V74-tz-U25">
+                            <rect key="frame" x="52" y="38" width="280" height="160"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="5Gx-5e-G0h"/>
+                                <constraint firstAttribute="width" constant="280" id="HwA-9C-uBp"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="V74-tz-U25" firstAttribute="centerX" secondItem="9w1-bK-aUW" secondAttribute="centerX" id="9xi-XL-PtE"/>
+                        <constraint firstItem="mHF-Iz-wbC" firstAttribute="top" secondItem="9w1-bK-aUW" secondAttribute="top" constant="10" id="WnN-z8-UXh"/>
+                        <constraint firstItem="V74-tz-U25" firstAttribute="top" secondItem="mHF-Iz-wbC" secondAttribute="bottom" constant="10" id="cGf-IW-Nux"/>
+                        <constraint firstItem="mHF-Iz-wbC" firstAttribute="centerX" secondItem="9w1-bK-aUW" secondAttribute="centerX" id="f7m-Xb-9jc"/>
+                        <constraint firstAttribute="height" constant="220" id="odH-M1-YYI"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-e8-9tL">
+                    <rect key="frame" x="15" y="273" width="384" height="50"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="mI1-d6-HbU"/>
+                    </constraints>
+                    <state key="normal" title="  支付宝支付" image="zhifubao">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="zfbAction:" destination="-1" eventType="touchUpInside" id="Ggo-GP-ztU"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-Lb-tek">
+                    <rect key="frame" x="15" y="338" width="384" height="50"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="UnT-CX-dSk"/>
+                    </constraints>
+                    <state key="normal" title="  微信支付" image="weixin">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="wxAction:" destination="-1" eventType="touchUpInside" id="T7L-Gx-XoX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="9w1-bK-aUW" firstAttribute="top" secondItem="uMX-WT-roS" secondAttribute="bottom" constant="20" id="5L3-ii-KzC"/>
+                <constraint firstItem="1Ar-Lb-tek" firstAttribute="leading" secondItem="cdv-e8-9tL" secondAttribute="leading" id="5mY-jA-FeB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uMX-WT-roS" secondAttribute="trailing" id="8zX-bg-s8v"/>
+                <constraint firstItem="1Ar-Lb-tek" firstAttribute="top" secondItem="cdv-e8-9tL" secondAttribute="bottom" constant="15" id="94o-VX-xin"/>
+                <constraint firstItem="1Ar-Lb-tek" firstAttribute="trailing" secondItem="cdv-e8-9tL" secondAttribute="trailing" id="D0h-nF-UKy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cdv-e8-9tL" secondAttribute="trailing" constant="15" id="HaY-gD-YRM"/>
+                <constraint firstItem="uMX-WT-roS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Mex-Hp-8uc"/>
+                <constraint firstItem="9w1-bK-aUW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="YAS-NV-RwG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9w1-bK-aUW" secondAttribute="trailing" constant="15" id="glr-1u-XYG"/>
+                <constraint firstItem="cdv-e8-9tL" firstAttribute="top" secondItem="9w1-bK-aUW" secondAttribute="bottom" constant="15" id="hmm-ax-cCV"/>
+                <constraint firstItem="cdv-e8-9tL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="tHC-Wp-9aT"/>
+                <constraint firstItem="uMX-WT-roS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tac-uq-ZeR"/>
+            </constraints>
+            <point key="canvasLocation" x="86.956521739130437" y="28.794642857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jx_shiming_levle1" width="452" height="253"/>
+        <image name="weixin" width="26" height="21"/>
+        <image name="zhifubao" width="23.5" height="23.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

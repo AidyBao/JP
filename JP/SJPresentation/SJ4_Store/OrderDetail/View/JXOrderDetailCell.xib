@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="JXOrderDetailCell" customModule="gold" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJB-Mp-n72">
+                        <rect key="frame" x="15" y="0.0" width="290" height="120"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpB-19-0Xf">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bZm-N8-HcG">
+                                        <rect key="frame" x="10" y="32.5" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="4wF-Z5-GHh"/>
+                                            <constraint firstAttribute="height" constant="55" id="eEP-hH-fnu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="披甲龙龟拉莫斯的荆棘背心" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW5-NP-ZwD">
+                                        <rect key="frame" x="75" y="51.5" width="171.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hW5-NP-ZwD" secondAttribute="trailing" constant="10" id="DTP-De-ZtK"/>
+                                    <constraint firstItem="hW5-NP-ZwD" firstAttribute="leading" secondItem="bZm-N8-HcG" secondAttribute="trailing" constant="10" id="H5z-x5-QSX"/>
+                                    <constraint firstItem="bZm-N8-HcG" firstAttribute="leading" secondItem="VpB-19-0Xf" secondAttribute="leading" constant="10" id="Xhi-Qi-p1t"/>
+                                    <constraint firstItem="hW5-NP-ZwD" firstAttribute="centerY" secondItem="bZm-N8-HcG" secondAttribute="centerY" id="Yhi-yG-2aT"/>
+                                    <constraint firstItem="bZm-N8-HcG" firstAttribute="centerY" secondItem="VpB-19-0Xf" secondAttribute="centerY" id="ttR-se-Ccs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="VpB-19-0Xf" firstAttribute="top" secondItem="JJB-Mp-n72" secondAttribute="top" id="3ne-7F-7XM"/>
+                            <constraint firstItem="VpB-19-0Xf" firstAttribute="leading" secondItem="JJB-Mp-n72" secondAttribute="leading" id="psM-oK-Do9"/>
+                            <constraint firstAttribute="bottom" secondItem="VpB-19-0Xf" secondAttribute="bottom" id="v3k-xj-M7U"/>
+                            <constraint firstAttribute="trailing" secondItem="VpB-19-0Xf" secondAttribute="trailing" id="wav-zB-19h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                <constraints>
+                    <constraint firstItem="JJB-Mp-n72" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6n8-63-LK6"/>
+                    <constraint firstAttribute="trailing" secondItem="JJB-Mp-n72" secondAttribute="trailing" constant="15" id="iJU-lB-39k"/>
+                    <constraint firstAttribute="bottom" secondItem="JJB-Mp-n72" secondAttribute="bottom" id="iyg-UW-1fb"/>
+                    <constraint firstItem="JJB-Mp-n72" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ulR-Wo-awO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="goodImg" destination="bZm-N8-HcG" id="3lj-kg-cFN"/>
+                <outlet property="lb1" destination="hW5-NP-ZwD" id="I7P-2n-ZoU"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="56.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

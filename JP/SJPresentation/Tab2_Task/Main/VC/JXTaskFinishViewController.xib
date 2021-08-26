@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JXTaskFinishViewController" customModule="gold" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="TS4-1N-IGS" id="ZWT-yF-g9J"/>
+                <outlet property="imgV" destination="v9y-xK-Dg1" id="0IP-KP-0MY"/>
+                <outlet property="lb1" destination="CmI-GB-ryk" id="jhN-iw-i3n"/>
+                <outlet property="lb2" destination="Ziz-3N-TN0" id="PNs-Al-e2r"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TS4-1N-IGS">
+                    <rect key="frame" x="20" y="241" width="374" height="374"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jx_gettg_succ" translatesAutoresizingMaskIntoConstraints="NO" id="v9y-xK-Dg1">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获得积分：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmI-GB-ryk">
+                            <rect key="frame" x="143.5" y="307" width="87" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="KRL-H1-Q8C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ziz-3N-TN0">
+                            <rect key="frame" x="166" y="338" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="505-Ma-ddJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZB-k6-Alb">
+                            <rect key="frame" x="330" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="59T-mN-ZIj"/>
+                                <constraint firstAttribute="height" constant="44" id="KtX-Vh-wg7"/>
+                            </constraints>
+                            <state key="normal" image="jx_video_cancel"/>
+                            <connections>
+                                <action selector="close:" destination="-1" eventType="touchUpInside" id="LGm-AF-jqu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="v9y-xK-Dg1" secondAttribute="trailing" id="4ie-mp-4Cy"/>
+                        <constraint firstItem="Ziz-3N-TN0" firstAttribute="centerX" secondItem="TS4-1N-IGS" secondAttribute="centerX" id="CT5-5F-3BI"/>
+                        <constraint firstItem="v9y-xK-Dg1" firstAttribute="top" secondItem="TS4-1N-IGS" secondAttribute="top" id="Ijb-GR-8GO"/>
+                        <constraint firstAttribute="bottom" secondItem="Ziz-3N-TN0" secondAttribute="bottom" constant="15" id="O9S-hg-cc7"/>
+                        <constraint firstAttribute="trailing" secondItem="eZB-k6-Alb" secondAttribute="trailing" id="SNc-Ur-Y2T"/>
+                        <constraint firstItem="eZB-k6-Alb" firstAttribute="top" secondItem="TS4-1N-IGS" secondAttribute="top" id="TGK-bM-MIj"/>
+                        <constraint firstItem="Ziz-3N-TN0" firstAttribute="top" secondItem="CmI-GB-ryk" secondAttribute="bottom" constant="10" id="Yto-fb-jjx"/>
+                        <constraint firstAttribute="bottom" secondItem="v9y-xK-Dg1" secondAttribute="bottom" id="coY-lI-vAl"/>
+                        <constraint firstItem="CmI-GB-ryk" firstAttribute="centerX" secondItem="TS4-1N-IGS" secondAttribute="centerX" id="e3v-PS-JDr"/>
+                        <constraint firstAttribute="width" secondItem="TS4-1N-IGS" secondAttribute="height" multiplier="559:559" id="hyG-HM-YKT"/>
+                        <constraint firstItem="v9y-xK-Dg1" firstAttribute="leading" secondItem="TS4-1N-IGS" secondAttribute="leading" id="kpz-VL-Y2a"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TS4-1N-IGS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-20" id="4br-jh-5LQ"/>
+                <constraint firstItem="TS4-1N-IGS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9qU-8Y-E6g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TS4-1N-IGS" secondAttribute="trailing" constant="20" id="Y6g-5t-iBF"/>
+                <constraint firstItem="TS4-1N-IGS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="vvS-pd-R5s"/>
+            </constraints>
+            <point key="canvasLocation" x="103" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jx_gettg_succ" width="559" height="628"/>
+        <image name="jx_video_cancel" width="11" height="11"/>
+    </resources>
+</document>

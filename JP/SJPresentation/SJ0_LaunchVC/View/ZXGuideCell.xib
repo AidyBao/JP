@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZXGuideCell" customModule="gold" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="791"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="791"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2AV-oR-R5o">
+                        <rect key="frame" x="0.0" y="0.0" width="429" height="791"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNq-zk-6cD">
+                        <rect key="frame" x="154.5" y="637" width="120" height="44"/>
+                        <color key="backgroundColor" red="1" green="0.64566007049999996" blue="0.47383518429999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="K3F-16-9U5"/>
+                            <constraint firstAttribute="height" constant="44" id="j3R-KC-EeX"/>
+                        </constraints>
+                        <state key="normal" title="跳过"/>
+                        <connections>
+                            <action selector="ydBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="7iG-Bt-0iU"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2AV-oR-R5o" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8Mx-p0-aaZ"/>
+                <constraint firstAttribute="bottom" secondItem="qNq-zk-6cD" secondAttribute="bottom" constant="110" id="8hy-3w-eE6"/>
+                <constraint firstAttribute="bottom" secondItem="2AV-oR-R5o" secondAttribute="bottom" id="DeF-uK-hFL"/>
+                <constraint firstItem="qNq-zk-6cD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OBF-Yk-f3a"/>
+                <constraint firstAttribute="trailing" secondItem="2AV-oR-R5o" secondAttribute="trailing" id="a2S-Py-QT4"/>
+                <constraint firstItem="2AV-oR-R5o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uef-cE-le2"/>
+            </constraints>
+            <size key="customSize" width="429" height="791"/>
+            <connections>
+                <outlet property="bgImgV" destination="2AV-oR-R5o" id="XAv-h7-z3Z"/>
+                <outlet property="ydBtn" destination="qNq-zk-6cD" id="Qch-pU-pkF"/>
+            </connections>
+            <point key="canvasLocation" x="436" y="488.00599700149928"/>
+        </collectionViewCell>
+    </objects>
+</document>

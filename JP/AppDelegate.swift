@@ -1,36 +1,102 @@
 //
 //  AppDelegate.swift
-//  JP
+//  gold
 //
-//  Created by SJXC on 2021/8/26.
+//  Created by 成都世纪星成网络科技有限公司 on 2021/3/26.
 //
 
 import UIKit
+import HandyJSON
+import Kingfisher
+import IQKeyboardManagerSwift
+import SnapKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    var window: UIWindow?
+    var admanager: JXBookStoreManager?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = UIColor.white
+        //
+        //小说
+        admanager = JXBookStoreManager.init()
+        
+        //
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.enable = false
+        
+        //MARK: - UIConfig
+        ZXStructs.loadUIConfig()
+        //MARK: - Load Tabbar's controllers
+        ZXRootController.reload()
+        
+        //
+        ZXWXShare.WXApiRegist()
+        
+        //
+        AliyunSdk.`init`()
+        
+        //MARK: - Set RootViewController
+        ZXRouter.changeRootViewController(SJLaunchViewController())
+        
+        ZXNetwork.showRequestLog = true
+        
+        //
+        self.zx_addNotice()
+        //趣变
+        self.jx_initAPPAD()
+        
+        self.window?.makeKeyAndVisible()
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        return WXApi.handleOpenUniversalLink(userActivity, delegate: self)
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication) {
     }
 
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    func applicationDidEnterBackground(_ application: UIApplication) {
     }
 
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        ZXGlobalData.enterForeground()
+    }
 
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+    }
+}
+
+extension AppDelegate: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        guard let sIndex = tabBarController.viewControllers?.firstIndex(of: viewController) else {
+            return true
+        }
+        
+        if sIndex != 0, !ZXToken.token.isLogin {
+            JXLoginViewController.show {
+                ZXRouter.tabbarSelect(at: sIndex)
+            }
+        }
+        
+        if sIndex == 0 {
+            tabBarController.tabBar.barTintColor = UIColor.black
+            tabBarController.tabBar.selectedItem?.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.zx_tabBarTitleNormalColor], for: .normal)
+            tabBarController.tabBar.selectedItem?.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
+        }else{
+            tabBarController.tabBar.barTintColor = UIColor.white
+            tabBarController.tabBar.selectedItem?.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.zx_tabBarTitleNormalColor], for: .selected)
+        }
+        
+        return UITabBarController.zx_tabBarController(tabBarController, shouldSelectViewController: viewController)
+    }
 }
 

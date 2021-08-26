@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JXJYZSectionHeader" customModule="gold" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JX_startJoy_4" translatesAutoresizingMaskIntoConstraints="NO" id="YOl-gg-hFu">
+                    <rect key="frame" x="15" y="26" width="6" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="6" id="pBQ-8Q-nRP"/>
+                        <constraint firstAttribute="height" constant="12" id="xOy-UV-vqx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经验值明细" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWr-EL-xYr">
+                    <rect key="frame" x="31" y="23" width="76.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hWr-EL-xYr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3am-B1-3CQ"/>
+                <constraint firstItem="YOl-gg-hFu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="brD-fU-ZH6"/>
+                <constraint firstItem="YOl-gg-hFu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="r4k-06-YQ3"/>
+                <constraint firstItem="hWr-EL-xYr" firstAttribute="leading" secondItem="YOl-gg-hFu" secondAttribute="trailing" constant="10" id="tZz-5c-TTj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lb" destination="hWr-EL-xYr" id="7Gc-Mm-5nl"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="403.125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="JX_startJoy_4" width="6" height="12"/>
+    </resources>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="JXCallbackCell" customModule="gold" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgR-b4-56l">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="a1C-f4-VWj"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRx-HV-9mx">
+                        <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yq9-Zc-D7r">
+                                <rect key="frame" x="10" y="11" width="41.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFw-a2-CDt">
+                                <rect key="frame" x="61.5" y="11" width="41.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mft-js-ssY">
+                                <rect key="frame" x="210" y="8.5" width="70" height="26"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Uk7-fY-x0J"/>
+                                    <constraint firstAttribute="height" constant="26" id="Vtb-cm-vWS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yq9-Zc-D7r" firstAttribute="centerY" secondItem="DRx-HV-9mx" secondAttribute="centerY" id="Gp2-ZD-xVP"/>
+                            <constraint firstItem="HFw-a2-CDt" firstAttribute="leading" secondItem="yq9-Zc-D7r" secondAttribute="trailing" constant="10" id="aws-Cs-P2R"/>
+                            <constraint firstItem="Mft-js-ssY" firstAttribute="centerY" secondItem="DRx-HV-9mx" secondAttribute="centerY" id="c4d-e1-iKa"/>
+                            <constraint firstItem="Mft-js-ssY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HFw-a2-CDt" secondAttribute="trailing" constant="10" id="cuM-Hf-i4B"/>
+                            <constraint firstItem="HFw-a2-CDt" firstAttribute="centerY" secondItem="DRx-HV-9mx" secondAttribute="centerY" id="mya-QB-r1f"/>
+                            <constraint firstAttribute="trailing" secondItem="Mft-js-ssY" secondAttribute="trailing" constant="10" id="sSY-bS-GF7"/>
+                            <constraint firstItem="yq9-Zc-D7r" firstAttribute="leading" secondItem="DRx-HV-9mx" secondAttribute="leading" constant="10" id="siA-Dz-ZhG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DRx-HV-9mx" secondAttribute="bottom" constant="1" id="8Yt-Pk-Sih"/>
+                    <constraint firstAttribute="trailing" secondItem="IgR-b4-56l" secondAttribute="trailing" id="X39-X4-qnD"/>
+                    <constraint firstItem="DRx-HV-9mx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="YiW-cv-1FN"/>
+                    <constraint firstItem="DRx-HV-9mx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aTW-Qy-jVW"/>
+                    <constraint firstAttribute="trailing" secondItem="DRx-HV-9mx" secondAttribute="trailing" constant="15" id="jUi-Ih-DH4"/>
+                    <constraint firstItem="IgR-b4-56l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kxf-Gn-Gva"/>
+                    <constraint firstAttribute="bottom" secondItem="IgR-b4-56l" secondAttribute="bottom" id="qGz-gm-FSW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="geliview" destination="IgR-b4-56l" id="gty-rL-sGN"/>
+                <outlet property="lb1" destination="yq9-Zc-D7r" id="7Sh-GM-beK"/>
+                <outlet property="lb2" destination="HFw-a2-CDt" id="UzF-he-VgE"/>
+                <outlet property="lb3" destination="Mft-js-ssY" id="CZf-DT-Js5"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="30.803571428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

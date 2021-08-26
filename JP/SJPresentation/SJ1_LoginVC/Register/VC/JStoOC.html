@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo</title>
+</head>
+<script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+<body>
+
+</body>
+<script>
+var captcha = new TencentCaptcha('2025345310', function(res) {
+    /* callback */
+            if(res && res.ret === 0) {
+                    // 获取票据、随机数并调用App端注入的方法传入票据、随机数，进行后台票据校验
+                    alert(res.ticket)
+                 window.webkit.messageHandlers.jsToOcWithPrams.postMessage({"ticket":res.ticket,"randstr":res.randstr});
+            }
+});
+captcha.show(); // 显示验证码
+</script>
+</html>

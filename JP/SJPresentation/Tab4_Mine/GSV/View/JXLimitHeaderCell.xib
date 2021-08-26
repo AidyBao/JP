@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="197" id="KGk-i7-Jjw" customClass="JXLimitHeaderCell" customModule="gold" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdx-db-bff">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SJ_User_header_bg" translatesAutoresizingMaskIntoConstraints="NO" id="iRZ-wG-UUi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4IH-5B-KJe">
+                                <rect key="frame" x="15" y="64" width="290" height="146"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gu-jM-gVu">
+                                        <rect key="frame" x="15" y="55" width="260" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0gu-jM-gVu" secondAttribute="trailing" constant="15" id="bwD-3z-Sy2"/>
+                                    <constraint firstItem="0gu-jM-gVu" firstAttribute="centerY" secondItem="4IH-5B-KJe" secondAttribute="centerY" id="cyB-uQ-gnI"/>
+                                    <constraint firstItem="0gu-jM-gVu" firstAttribute="leading" secondItem="4IH-5B-KJe" secondAttribute="leading" constant="15" id="yjs-6b-tut"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iRZ-wG-UUi" firstAttribute="top" secondItem="rdx-db-bff" secondAttribute="top" id="38h-c0-hqE"/>
+                            <constraint firstAttribute="bottom" secondItem="4IH-5B-KJe" secondAttribute="bottom" constant="10" id="3dy-0L-aX2"/>
+                            <constraint firstAttribute="height" constant="220" id="Eef-9z-4HD"/>
+                            <constraint firstAttribute="bottom" secondItem="iRZ-wG-UUi" secondAttribute="bottom" id="aV5-dG-gmv"/>
+                            <constraint firstItem="iRZ-wG-UUi" firstAttribute="leading" secondItem="rdx-db-bff" secondAttribute="leading" id="c1d-nG-gAV"/>
+                            <constraint firstAttribute="trailing" secondItem="4IH-5B-KJe" secondAttribute="trailing" constant="15" id="fSv-h1-v4S"/>
+                            <constraint firstItem="4IH-5B-KJe" firstAttribute="top" secondItem="rdx-db-bff" secondAttribute="top" constant="64" id="oIt-ku-gda"/>
+                            <constraint firstAttribute="trailing" secondItem="iRZ-wG-UUi" secondAttribute="trailing" id="tFb-mq-hDn"/>
+                            <constraint firstItem="4IH-5B-KJe" firstAttribute="leading" secondItem="rdx-db-bff" secondAttribute="leading" constant="15" id="zfP-SQ-zq7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rdx-db-bff" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HzB-6B-MUf"/>
+                    <constraint firstItem="rdx-db-bff" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KXf-6Z-KUg"/>
+                    <constraint firstAttribute="bottom" secondItem="rdx-db-bff" secondAttribute="bottom" id="uR1-Zb-iCm"/>
+                    <constraint firstAttribute="trailing" secondItem="rdx-db-bff" secondAttribute="trailing" id="uSL-FV-Ink"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLB" destination="0gu-jM-gVu" id="26I-Rh-iml"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="86.049107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="SJ_User_header_bg" width="375" height="199"/>
+    </resources>
+</document>
