@@ -43,12 +43,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)gdt_NativeExpressProAdViewClosed:(GDTNativeExpressProAdView *)nativeExpressProAdView;
 
 /**
- * 点击原生模板2.0广告点击以后即将弹出全屏广告页
+ * 点击原生模板2.0广告以后即将弹出全屏广告页
  */
 - (void)gdt_NativeExpressProAdViewWillPresentScreen:(GDTNativeExpressProAdView *)nativeExpressProAdView;
 
 /**
- * 点击原生模板2.0广告点击以后弹出全屏广告页
+ * 点击原生模板2.0广告以后弹出全屏广告页
  */
 - (void)gdt_NativeExpressProAdViewDidPresentScreen:(GDTNativeExpressProAdView *)nativeExpressProAdView;
 
@@ -58,9 +58,29 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)gdt_NativeExpressProAdViewWillDissmissScreen:(GDTNativeExpressProAdView *)nativeExpressProAdView;
 
 /**
- * 全屏广告页将要关闭
+ * 全屏广告页已经关闭
  */
 - (void)gdt_NativeExpressProAdViewDidDissmissScreen:(GDTNativeExpressProAdView *)nativeExpressProAdView;
+
+/**
+ * 视频详情页 WillPresent 回调
+ */
+- (void)gdt_NativeExpressProAdViewWillPresentVideoVC:(GDTNativeExpressProAdView *)nativeExpressProAdView;
+
+/**
+ * 视频详情页 DidPresent 回调
+ */
+- (void)gdt_NativeExpressProAdViewDidPresentVideoVC:(GDTNativeExpressProAdView *)nativeExpressProAdView;
+
+/**
+ * 视频详情页 WillDismiss 回调
+ */
+- (void)gdt_NativeExpressProAdViewWillDismissVideoVC:(GDTNativeExpressProAdView *)nativeExpressProAdView;
+
+/**
+ * 视频详情页 DidDismiss 回调
+ */
+- (void)gdt_NativeExpressProAdViewDidDismissVideoVC:(GDTNativeExpressProAdView *)nativeExpressProAdView;
 
 /**
  * 详解:当点击应用下载或者广告调用系统程序打开时调用

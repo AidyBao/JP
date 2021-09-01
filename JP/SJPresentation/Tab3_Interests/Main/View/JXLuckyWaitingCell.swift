@@ -19,6 +19,7 @@ class JXLuckyWaitingCell: UITableViewCell {
     @IBOutlet weak var timeBGView: UIView!
     @IBOutlet weak var processView: JXProcessView!
     @IBOutlet weak var percent: UILabel!
+    @IBOutlet weak var totalAmount: UILabel!
     fileprivate var model:JXYZJModel?
     weak var delegate: JXLuckyWaitingCellDelegate? = nil
     
@@ -36,6 +37,9 @@ class JXLuckyWaitingCell: UITableViewCell {
         
         self.percent.font = UIFont.zx_markFont
         self.percent.textColor = UIColor.white
+        
+        self.totalAmount.font = UIFont.zx_markFont
+        self.totalAmount.textColor = UIColor.white
         
         self.imgV.backgroundColor = UIColor.zx_lightGray
         self.imgV.layer.cornerRadius = 5
@@ -64,6 +68,8 @@ class JXLuckyWaitingCell: UITableViewCell {
             self.processView.setProgress(value, animated: true)
             
             self.percent.text = "\(Int(Double(value).roundTo(places: 2)*100))" + "%"
+            
+            self.totalAmount.text = "\(modle.totalAmount)积分"
         }
     }
     

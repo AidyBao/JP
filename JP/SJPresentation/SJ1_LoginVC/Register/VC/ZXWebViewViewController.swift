@@ -44,6 +44,7 @@ class ZXWebViewViewController: ZXUIViewController {
         
         if !urlStr.isEmpty {
             if let url = URL.init(string: urlStr) {
+                ZXHUD.showLoading(in: self.view, text: "", delay: nil)
                 self.webView.load(URLRequest(url: url))
             }else{
                 ZXAlertUtils.showAlert(wihtTitle: "提示", message: "访问出错了", buttonText: "确定", action: {
@@ -55,7 +56,6 @@ class ZXWebViewViewController: ZXUIViewController {
                 self.dismissAction()
             })
         }
-        ZXHUD.showLoading(in: self.view, text: "", delay: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

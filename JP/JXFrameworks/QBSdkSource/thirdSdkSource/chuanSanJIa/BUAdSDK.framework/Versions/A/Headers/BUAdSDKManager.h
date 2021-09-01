@@ -10,6 +10,11 @@
 #import "BUAdSDKDefines.h"
 #import "BUMopubAdMarkUpDelegate.h"
 
+typedef NS_ENUM(NSInteger, BUAdSDKInitializationState) {
+    BUAdSDKInitializationStateNotReady = 0,
+    BUAdSDKInitializationStateReady = 1
+};
+
 typedef void (^BUConfirmGDPR)(BOOL isAgreed);
 
 typedef void (^BUCompletionHandler)(BOOL success,NSError *error);
@@ -17,6 +22,9 @@ typedef void (^BUCompletionHandler)(BOOL success,NSError *error);
 @interface BUAdSDKManager : NSObject
 
 @property (nonatomic, copy, readonly, class) NSString *SDKVersion;
+
+/// The PangleSDK initialization state
+@property (nonatomic, assign, readonly, class) BUAdSDKInitializationState initializationState;
 
 /// The synchronize initialization method of Pangle
 /// @param completionHandler Callback to the initialization state of the calling thread

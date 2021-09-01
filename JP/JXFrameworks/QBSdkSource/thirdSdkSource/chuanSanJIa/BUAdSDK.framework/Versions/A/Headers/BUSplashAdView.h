@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol BUSplashAdDelegate;
 
+/// Please note: This Class does not take effect on Pangle global, only use it when you have traffic from mainland China.
 @interface BUSplashAdView : UIView <BUMopubAdMarkUpDelegate>
 /**
 The unique identifier of splash ad.
@@ -75,6 +76,11 @@ The unique identifier of splash ad.
  Start the countdown(@tolerateTimeout) as soon as you request datas.
  */
 - (void)loadAdData;
+
+/**
+ Ad slot material id
+ */
+- (NSString *)getAdCreativeToken;
 
 @end
 

@@ -14,4 +14,8 @@
 
 CTTelephonyNetworkInfo *BUDefaultTelephonyNetworkInfo(void);
 
+@interface BUEnvironment : NSObject
+
+@end
+
 #endif /* BUEnvironment_h */

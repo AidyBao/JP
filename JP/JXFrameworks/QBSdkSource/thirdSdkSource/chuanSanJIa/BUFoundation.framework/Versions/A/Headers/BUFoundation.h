@@ -128,7 +128,7 @@
 
 #import <BUFoundation/BUZipArchive.h>
 #import <BUFoundation/BUGeckoPreloadManager.h>
-
+#import <BUFoundation/BUDownloadSpeedServer.h>
 #import <BUFoundation/BU_ZFPlayer.h>
 
 /************************************ ThirdParty***********************************/

@@ -112,6 +112,11 @@ this method is used to get the type of fullscreen video ad
 - (void)loadAdData;
 
 /**
+ Ad slot material id
+ */
+- (NSString *)getAdCreativeToken;
+
+/**
  Display video ad.
  @param rootViewController : root view controller for displaying ad.
  @return : whether it is successfully displayed.

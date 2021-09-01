@@ -20,14 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong, readonly, nullable) UIButton *dislikeButton;
 
-/**
- Promotion label.Need to actively add to the view.
- */
+///Promotion label.Need to actively add to the view.
+/// Please note: This API does not take effect on Pangle global, only use it when you have traffic from mainland China.
 @property (nonatomic, strong, readonly, nullable) UILabel *adLabel;
 
-/**
- Ad logo.Need to actively add to the view.
- */
+///Ad logo.Need to actively add to the view.
+/// Please note: This API does not take effect on Pangle global, only use it when you have traffic from mainland China.
 @property (nonatomic, strong, readonly, nullable) UIImageView *logoImageView;
 /**
  Ad logo + Promotion label.Need to actively add to the view.

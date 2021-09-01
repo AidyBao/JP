@@ -50,11 +50,24 @@ typedef NS_ENUM(NSUInteger, BULanguageType) {//"万"转换规则
  */
 + (NSDictionary*)bu_parametersOfURLString:(NSString*)urlString DEPRECATED_MSG_ATTRIBUTE("使用 `bu_parametersOfURLQueryString` 代替此方法");
 + (NSDictionary*)bu_parametersOfURLQueryString:(NSString*)urlString;
++ (NSDictionary*)bu_convertStringToDictionary:(NSString*)string;
+
 /*
  *
  url字符串拼接参数,需要判断是否是第一个
  */
 + (NSString *)bu_urlStringWithOriginUrlString:(NSString *)originUrlString appendParameters:(NSDictionary *)parameters;
+
++ (NSString *)bu_urlStringWithBaseUrlString:(NSString *)baseUrlString requestURLString:(NSString *)requestURLString;
+
++ (NSString *)bu_urlStringWithUrlString:(NSString *)urlString parameterString:(NSString *)parameterString;
+
+/*
+ * 格式转化
+   222222 -> 222,222
+ */
++ (NSString *)bu_convertNumberFormatter:(NSString *)str;
+
 @end
 
 
@@ -99,6 +112,12 @@ typedef NS_ENUM(NSUInteger, BULanguageType) {//"万"转换规则
  *  @param count 多少位随机数
  */
 + (NSString *)randomStringWithCount:(NSUInteger)count;
+@end
+
+@interface NSString (BU_Size)
+
+- (CGSize)bu_boundingRectWithSize:(CGSize)size font:(UIFont *)font;
+
 @end
 
 NS_ASSUME_NONNULL_END

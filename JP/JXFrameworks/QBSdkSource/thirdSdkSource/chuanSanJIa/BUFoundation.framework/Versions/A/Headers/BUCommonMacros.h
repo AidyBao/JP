@@ -28,6 +28,7 @@ FOUNDATION_EXPORT NSString * const BUSDKVersion;
 #define BUCheckValidArray(__aArray)                 (__aArray && [__aArray isKindOfClass:[NSArray class]] && [__aArray count])
 #define BUCheckValidDictionary(__aDictionary)       (__aDictionary && [__aDictionary isKindOfClass:[NSDictionary class]] && [__aDictionary count])
 #define BUCheckValidDate(__aDate)                   (__aDate && [__aDate isKindOfClass:[NSDate class]])
+#define BUCheckValidData(__aData)                   (__aData && [__aData isKindOfClass:[NSData class]])
 
 /** Color String**/
 #define BUColorString(__string)    [UIColor bu_colorWithHexString:(__string)]

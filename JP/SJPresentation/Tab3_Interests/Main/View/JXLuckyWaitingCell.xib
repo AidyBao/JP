@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="JXLuckyWaitingCell" customModule="gold" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="JXLuckyWaitingCell" customModule="JP" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -57,7 +57,7 @@
                                     <constraint firstItem="0RB-XR-HwV" firstAttribute="top" secondItem="KWk-kz-L1Z" secondAttribute="top" id="zgj-P8-ENj"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffd-jg-q9f" customClass="JXProcessView" customModule="gold" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffd-jg-q9f" customClass="JXProcessView" customModule="JP" customModuleProvider="target">
                                 <rect key="frame" x="85" y="48" width="165" height="10"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -70,6 +70,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89Y-Zx-Sfi">
+                                <rect key="frame" x="219" y="33.5" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -77,9 +83,11 @@
                             <constraint firstItem="0ng-7D-seO" firstAttribute="centerY" secondItem="92F-cs-XKU" secondAttribute="centerY" constant="-15" id="BOK-Hj-ciY"/>
                             <constraint firstAttribute="trailing" secondItem="KWk-kz-L1Z" secondAttribute="trailing" constant="10" id="Dw7-LB-DpD"/>
                             <constraint firstItem="KWk-kz-L1Z" firstAttribute="top" secondItem="92F-cs-XKU" secondAttribute="top" constant="10" id="GGp-aI-O7k"/>
+                            <constraint firstItem="89Y-Zx-Sfi" firstAttribute="centerY" secondItem="Ikh-Wj-ynK" secondAttribute="centerY" id="OV2-mM-g4V"/>
                             <constraint firstItem="KWk-kz-L1Z" firstAttribute="leading" secondItem="Ffd-jg-q9f" secondAttribute="trailing" constant="10" id="Pjz-EK-0uQ"/>
                             <constraint firstItem="peh-2Z-p0A" firstAttribute="leading" secondItem="92F-cs-XKU" secondAttribute="leading" constant="10" id="RsX-qs-bWr"/>
                             <constraint firstItem="Ikh-Wj-ynK" firstAttribute="leading" secondItem="0ng-7D-seO" secondAttribute="leading" id="TUT-6u-LZ7"/>
+                            <constraint firstItem="KWk-kz-L1Z" firstAttribute="leading" secondItem="89Y-Zx-Sfi" secondAttribute="trailing" constant="10" id="ZgO-9k-ZRO"/>
                             <constraint firstItem="peh-2Z-p0A" firstAttribute="centerY" secondItem="92F-cs-XKU" secondAttribute="centerY" id="aAW-yr-WTs"/>
                             <constraint firstItem="Ikh-Wj-ynK" firstAttribute="top" secondItem="0ng-7D-seO" secondAttribute="bottom" id="eKe-J1-JKk"/>
                             <constraint firstItem="0ng-7D-seO" firstAttribute="leading" secondItem="peh-2Z-p0A" secondAttribute="trailing" constant="10" id="hRP-Cz-rHR"/>
@@ -104,6 +112,7 @@
                 <outlet property="percent" destination="Ikh-Wj-ynK" id="QDl-15-p4S"/>
                 <outlet property="processView" destination="Ffd-jg-q9f" id="ZpV-vd-UZy"/>
                 <outlet property="timeBGView" destination="KWk-kz-L1Z" id="GTV-61-zT2"/>
+                <outlet property="totalAmount" destination="89Y-Zx-Sfi" id="n0t-gE-z17"/>
             </connections>
             <point key="canvasLocation" x="-39.130434782608695" y="49.888392857142854"/>
         </tableViewCell>

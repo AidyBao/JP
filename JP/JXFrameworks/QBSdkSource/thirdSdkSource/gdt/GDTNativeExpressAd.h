@@ -149,6 +149,13 @@
 - (instancetype)initWithPlacementId:(NSString *)placementId adSize:(CGSize)size;
 
 /**
+ *  构造方法, S2S bidding 后获取到 token 再调用此方法
+ *  @param placementId  广告位 ID
+ *  @param token  通过 Server Bidding 请求回来的 token
+ */
+- (instancetype)initWithPlacementId:(NSString *)placementId token:(NSString *)token;
+
+/**
  *  构造方法
  *  详解：appId - 媒体 ID
  *       placementId - 广告位 ID
@@ -156,7 +163,25 @@
  */
 - (instancetype)initWithAppId:(NSString *)appId placementId:(NSString *)placementId adSize:(CGSize)size GDT_DEPRECATED_MSG_ATTRIBUTE("接口即将废弃，请使用 initWithPlacementId:adSize:");
 
+/**
+ *  拉取广告
+ *  @param count 请求广告数量，区间为[1，3]，若大于3默认设置为3
+ */
 - (void)loadAd:(NSInteger)count;
+
+/**
+ *  竟胜之后调用, 需要在调用广告 show 之前调用
+ *  @param price - 竟胜价格 (单位: 分)
+ */
+- (void)sendWinNotificationWithPrice:(NSInteger)price;
+
+/**
+ *  竟败之后调用
+ *  @param price - 竟胜价格 (单位: 分)
+ *  @param reason - 优量汇广告竟败原因
+ *  @param adnID - adnID
+ */
+- (void)sendLossNotificationWithWinnerPrice:(NSInteger)price lossReason:(GDTAdBiddingLossReason)reason winnerAdnID:(NSString *)adnID;
 
 /**
  返回广告平台名称
@@ -164,4 +189,5 @@
  @return 当使用流量分配功能时，用于区分广告平台；未使用时为空字符串
  */
 - (NSString *)adNetworkName;
+
 @end

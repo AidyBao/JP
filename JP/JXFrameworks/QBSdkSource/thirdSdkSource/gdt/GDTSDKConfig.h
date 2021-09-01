@@ -78,5 +78,10 @@
 
 + (void)forbiddenIDFA:(BOOL)forbiddened;
 
+/**
+ 获取 buyerId 用于 Server Bidding 请求获取 token, 建议每次请求前调用一次, 并使用最新值请求
+ */
++ (NSString *)getBuyerId;
+
 @end
 

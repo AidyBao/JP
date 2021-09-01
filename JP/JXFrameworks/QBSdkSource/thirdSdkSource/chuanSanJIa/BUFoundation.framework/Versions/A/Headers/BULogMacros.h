@@ -25,7 +25,7 @@ if(flg) [BULogManager debugLogWithFormat:@"[PangleUnion-%@]-[debug]-[%@]%@", BUS
 #define BU_LogDebugD(BULogType, frmt, ...) BU_LogBaseD(debug, BULogType, frmt, ##__VA_ARGS__)
 #define BU_LogVerboseD(BULogType, frmt, ...) BU_LogBaseD(verbose, BULogType, frmt, ##__VA_ARGS__)
 #define BU_LogInternalD(BULogType, frmt, ...) BU_LogBaseD(internal, BULogType, frmt, ##__VA_ARGS__)
-
+#define BU_LogServerD(BULogType, frmt, ...) BU_LogBaseD(server, BULogType, frmt, ##__VA_ARGS__)
 #define BU_LogBaseD(level, BULogType, frmt, ...) [BULogManager level##LogWithFormat:@"[PangleUnion-%@]-[%s]-[%@]%@", BUSDKVersion, #level, BULogType, [NSString stringWithFormat:frmt, ##__VA_ARGS__]];
 
 

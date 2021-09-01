@@ -18,11 +18,17 @@
 #import <BUAdSDK/BUMaterialMeta.h>
 #import <BUAdSDK/BUPlayerPublicDefine.h>
 #import <BUAdSDK/BUVideoAdView.h>
+#import <BUAdSDK/BUVideoAdDelegate.h>
+#import <BUAdSDK/BUVideoAdReportor.h>
+#import <BUAdSDK/BUMopubAdMarkUpDelegate.h>
+#import <BUAdSDK/BUGeckoManager.h>
+
 
 ///customize dislike style
 #import <BUAdSDK/BUDislike.h>
 #import <BUAdSDK/BUDislikeWords.h>
 #import <BUAdSDK/BUDislikeReportor.h>
+#import <BUAdSDK/BUPersonalizationPrompts.h>
 
 /// native ads
 #import <BUAdSDK/BUNativeAd.h>
@@ -41,6 +47,7 @@
 
 /// splash ads
 #import <BUAdSDK/BUSplashAdView.h>
+#import <BUAdSDK/BUSplashZoomOutView.h>
 
 /// rewarded video ads
 #import <BUAdSDK/BURewardedVideoModel.h>
@@ -57,7 +64,3 @@
 
 /// test tools
 #import <BUAdSDK/BUAdSDKTestToolManager.h>
-
-/// pangle view
-#import <BUAdSDK/PangleNativeBannerView.h>
-#import <BUAdSDK/PangleNativeInterstitialView.h>

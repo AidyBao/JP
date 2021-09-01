@@ -35,6 +35,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithPlacementId:(NSString *)placementId;
 
+/**
+ *  构造方法, S2S bidding 后获取到 token 再调用此方法
+ *  @param placementId  广告位 ID
+ *  @param token  通过 Server Bidding 请求回来的 token
+ */
+- (instancetype)initWithPlacementId:(NSString *)placementId token:(NSString *)token;
 
 /**
  构造方法
@@ -57,6 +63,19 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)showAdFromRootViewController:(UIViewController *)rootViewController;
 
+/**
+ *  竟胜之后调用, 需要在调用广告 show 之前调用
+ *  @param price - 竟胜价格 (单位: 分)
+ */
+- (void)sendWinNotificationWithPrice:(NSInteger)price;
+
+/**
+ *  竟败之后调用
+ *  @param price - 竟胜价格 (单位: 分)
+ *  @param reason - 优量汇广告竟败原因
+ *  @param adnID - adnID
+ */
+- (void)sendLossNotificationWithWinnerPrice:(NSInteger)price lossReason:(GDTAdBiddingLossReason)reason winnerAdnID:(NSString *)adnID;
 
 /**
  返回广告的eCPM，单位：分

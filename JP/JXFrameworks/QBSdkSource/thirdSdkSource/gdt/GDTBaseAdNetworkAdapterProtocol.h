@@ -10,18 +10,16 @@
 
 @protocol GDTBaseAdNetworkAdapterProtocol <NSObject>
 
-+ (NSString *)adapterVersion;
++ (void)updateAppId:(NSString *)appId extStr:(NSString *)extStr;
 
 - (instancetype)initWithAdNetworkConnector:(id)connector
-                                     posId:(NSString *)posId
-                                    extStr:(NSString *)extStr;
+                                     posId:(NSString *)posId;
+
+
 @optional
 
 - (NSInteger)eCPM;
-- (NSInteger)priority;
 - (NSString *)eCPMLevel;
-- (void)cancelLoad;
-- (NSInteger)mediationPrice;
 - (BOOL)isContractAd;
 
 @end

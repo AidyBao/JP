@@ -68,6 +68,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+/// Please note: This Class does not take effect on Pangle global, only use it when you have traffic from mainland China.
 @interface BUNativeExpressInterstitialAd : NSObject <BUMopubAdMarkUpDelegate>
 
 @property (nonatomic, weak, nullable) id<BUNativeExpresInterstitialAdDelegate> delegate;
@@ -104,6 +105,11 @@ NS_ASSUME_NONNULL_BEGIN
  @return : whether it is successfully displayed.
  */
 - (BOOL)showAdFromRootViewController:(UIViewController *)rootViewController;
+
+/**
+ Ad slot material id 
+ */
+- (NSString *)getAdCreativeToken;
 
 @end
 

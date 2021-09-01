@@ -48,6 +48,12 @@ typedef NS_ENUM(NSUInteger, BUVideoPlayerDecoeMode) {
  This method is called when the player is ready.
  */
 - (void)playerReadyToPlay:(BUPlayer *)player;
+
+/**
+ This method is called when the player is ready, while application in background.
+ */
+- (void)playerReadyToPlayWhenApplicationEnterBackground:(BUPlayer *)player;
+
 /**
  This method is called when the player plays completion or occurrs error.
  */

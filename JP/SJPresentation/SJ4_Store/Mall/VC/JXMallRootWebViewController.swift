@@ -63,6 +63,7 @@ class JXMallRootWebViewController: ZXUIViewController {
             let set = CharacterSet(charactersIn: " ").inverted
             if let turl = urlStr.addingPercentEncoding(withAllowedCharacters: set) {
                 if let url = URL(string: turl) {
+                    ZXHUD.showLoading(in: self.view, text: "", delay: 0)
                     self.webView.load(URLRequest(url: url))
                 } else {
                     self.webView.scrollView.mj_header?.endRefreshing()

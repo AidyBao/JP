@@ -107,6 +107,11 @@
 
 - (void)replaceCurrentItemWithPlayerItem:(BUPlayerItem *)item;
 
+
+- (void)insertGaosiMohuWithLayer:(CALayer *)layer;
+
+- (void)insertGaosiMohuWithView:(UIView *)view;
+
 @end
 
 @interface BUPlayer (BUPlayerControl)

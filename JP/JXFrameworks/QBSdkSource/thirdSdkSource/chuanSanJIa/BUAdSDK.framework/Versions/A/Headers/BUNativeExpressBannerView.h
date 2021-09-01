@@ -133,6 +133,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)loadAdData;
 
+/**
+ Ad slot material id
+ */
+- (NSString *)getAdCreativeToken;
+
 @end
 
 @interface BUNativeExpressBannerView (Deprecated)

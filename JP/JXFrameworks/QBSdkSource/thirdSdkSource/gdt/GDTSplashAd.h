@@ -135,6 +135,13 @@
 - (NSString *)adNetworkName;
 
 /**
+ 返回广告的eCPM，单位：分
+ 
+ @return 成功返回一个大于等于0的值，-1表示无权限或后台出现异常
+ */
+- (NSInteger)eCPM;
+
+/**
  返回广告的eCPM等级
  
  @return 成功返回一个包含数字的string，@""或nil表示无权限或后台异常
@@ -146,6 +153,13 @@
  *  详解：placementId - 广告位 ID
  */
 - (instancetype)initWithPlacementId:(NSString *)placementId;
+
+/**
+ *  构造方法, S2S bidding 后获取到 token 再调用此方法
+ *  @param placementId  广告位 ID
+ *  @param token  通过 Server Bidding 请求回来的 token
+ */
+- (instancetype)initWithPlacementId:(NSString *)placementId token:(NSString *)token;
 
 /**
  预加载闪屏广告接口
@@ -186,6 +200,20 @@
  *  详解：广告展示成功时会回调splashAdSuccessPresentScreen方法，展示失败时会回调splashAdFailToPresent方法
  */
 - (void)showFullScreenAdInWindow:(UIWindow *)window withLogoImage:(UIImage *)logoImage skipView:(UIView *)skipView;
+
+/**
+ *  竟胜之后调用, 需要在调用广告 show 之前调用
+ *  @param price - 竟胜价格 (单位: 分)
+ */
+- (void)sendWinNotificationWithPrice:(NSInteger)price;
+
+/**
+ *  竟败之后调用
+ *  @param price - 竟胜价格 (单位: 分)
+ *  @param reason - 优量汇广告竟败原因
+ *  @param adnID - adnID
+ */
+- (void)sendLossNotificationWithWinnerPrice:(NSInteger)price lossReason:(GDTAdBiddingLossReason)reason winnerAdnID:(NSString *)adnID;
 
 /**
  *  构造方法

@@ -101,7 +101,7 @@ This method is used to get the type of nativeExpressFullScreenVideo ad
 
 @end
 
-
+/// Please note: This Class does not take effect on Pangle global, only use it when you have traffic from mainland China.
 @interface BUNativeExpressFullscreenVideoAd : NSObject <BUMopubAdMarkUpDelegate>
 
 @property (nonatomic, weak, nullable) id<BUNativeExpressFullscreenVideoAdDelegate> delegate;
@@ -128,6 +128,11 @@ This method is used to get the type of nativeExpressFullScreenVideo ad
  Load video ad datas.
  */
 - (void)loadAdData;
+
+/**
+ Ad slot material id
+ */
+- (NSString *)getAdCreativeToken;
 
 /**
  Display video ad.

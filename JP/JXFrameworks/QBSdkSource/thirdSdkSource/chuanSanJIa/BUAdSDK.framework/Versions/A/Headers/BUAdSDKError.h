@@ -31,6 +31,17 @@ typedef NS_ENUM(NSInteger, BUErrorCode) {
     BUErrorCodeNERenderTimoutError= 107,    // native Express ad, render timeout
     BUErrorCodeTempLoadError      = 109,    // native Express ad, template load fail
     
+    
+    BUErrorCodeDynamic_1_JSContextEmpty     =       112,
+    BUErrorCodeDynamic_1_ParseError         =       113,
+    BUErrorCodeDynamic_1_Timeout            =       117,
+    BUErrorCodeDynamic_1_SubComponentNotExist   =   118,
+    
+    BUErrorCodeDynamic_2_ParseError         =       123,
+    BUErrorCodeDynamic_2_Timeout            =       127,
+    BUErrorCodeDynamic_2_SubComponentNotExist   =   128,
+    
+    
     BUErrorCodeDRRenderEngineError = 401,   // native Express ad, engine error
     BUErrorCodeDRRenderContextError = 402,  // native Express ad, context error
     BUErrorCodeDRRenderItemNotExist = 403,  // native Express ad, item not exist
@@ -72,5 +83,20 @@ typedef NS_ENUM(NSInteger, BUErrorCode) {
     BUUnionMedialCheckError     = 40026,    // Non-international account request for overseas delivery system
     BUUnionSlotIDRenderMthodNoMatch = 40029,// The rendering method for slot ID does not match.
     
-    BUErrorCodeSysError         = 50001     // ad server error
+    
+    BUUnionCpidChannelCodeError = 40030, // Huawei browse impex cpid channeld code does not match.
+    BUUnionInternationalRequestCurrencyTypeError = 40031, // International request currency type is empty.
+    BUUnionOpenRTBRequestTokenError    =40032, // OpenRTB request token is empty.
+    BUUnionHardCodeError   =   40033, // Hard code not return ads, return message does not adjust.
+    
+    
+    BUUnionSDKVersionTooLow   =40041, // SDK version is too low.
+    BUUnionNewInterstitialStyleVersionError  =    40042, // New interstitial style use sdk version is too low. Plese upgrade SDK version to 3.5.5.0.
+    BUUnionPreviewFlowInvalid   =40043, // Preview flow invalid.
+    
+    BUErrorCodeSysError         = 50001,     // ad server error
+    
+    
+    BUErrorCodeNetworkError =   98764,  // network error.
+    BUErrorCodeUndefined    =       98765, // error undefined
 };

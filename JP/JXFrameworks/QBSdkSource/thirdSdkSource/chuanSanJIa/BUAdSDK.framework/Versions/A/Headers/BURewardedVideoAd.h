@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, BURewardedVideoAdType) {
 @interface BURewardedVideoAd : NSObject <BUMopubAdMarkUpDelegate>
 @property (nonatomic, strong) BURewardedVideoModel *rewardedVideoModel;
 @property (nonatomic, weak, nullable) id<BURewardedVideoAdDelegate> delegate;
-
+@property (nonatomic, weak, nullable) id<BURewardedVideoAdDelegate> rewardPlayAgainInteractionDelegate;
 /**
  Whether material is effective.
  Setted to YES when data is not empty and has not been displayed.
@@ -47,6 +47,11 @@ typedef NS_ENUM(NSUInteger, BURewardedVideoAdType) {
 
 
 - (void)loadAdData;
+
+/**
+ Ad slot material id
+ */
+- (NSString *)getAdCreativeToken;
 
 /**
  Display video ad.
@@ -79,7 +84,7 @@ typedef NS_ENUM(NSUInteger, BURewardedVideoAdType) {
 - (void)rewardedVideoAd:(BURewardedVideoAd *)rewardedVideoAd didFailWithError:(NSError *_Nullable)error;
 
 /**
- This method is called when cached successfully.
+ This method is called when video cached successfully.
  */
 - (void)rewardedVideoAdVideoDidLoad:(BURewardedVideoAd *)rewardedVideoAd;
 

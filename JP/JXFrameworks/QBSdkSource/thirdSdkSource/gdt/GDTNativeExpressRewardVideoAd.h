@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol GDTNativeExpressRewardedVideoAdDelegate;
 
+GDT_DEPRECATED_MSG_ATTRIBUTE("GDTNativeExpressRewardVideoAd类即将废弃，请使用GDTRewardVideoAd类")
 @interface GDTNativeExpressRewardVideoAd : NSObject
 
 @property (nonatomic, getter=isAdValid, readonly) BOOL adValid;
@@ -45,6 +46,19 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)showAdFromRootViewController:(UIViewController *)rootViewController;
 
+/**
+ *  竟胜之后调用, 需要在调用广告 show 之前调用
+ *  @param price - 竟胜价格 (单位: 分)
+ */
+- (void)sendWinNotificationWithPrice:(NSInteger)price;
+
+/**
+ *  竟败之后调用
+ *  @param price - 竟胜价格 (单位: 分)
+ *  @param reason - 优量汇广告竟败原因
+ *  @param adnID - adnID
+ */
+- (void)sendLossNotificationWithWinnerPrice:(NSInteger)price lossReason:(GDTAdBiddingLossReason)reason winnerAdnID:(NSString *)adnID;
 
 /**
  返回广告的eCPM，单位：分

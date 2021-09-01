@@ -53,6 +53,16 @@ typedef NS_ENUM(NSInteger, GDTVastAdEventType) {
 @property (nonatomic, copy, readonly) NSString *iconUrl;
 
 /**
+ 广告大图Url, 建议使用 bindImageViews:placeholder: 方法替代
+ */
+@property (nonatomic, copy, readonly) NSString *imageUrl;
+
+/**
+ 三小图广告的图片Url集合, 建议使用 bindImageViews:placeholder: 方法替代
+ */
+@property (nonatomic, copy, readonly) NSArray *mediaUrlList;
+
+/**
  应用类广告的星级（5星制度）
  */
 @property (nonatomic, readonly) CGFloat appRating;
@@ -76,6 +86,11 @@ typedef NS_ENUM(NSInteger, GDTVastAdEventType) {
  是否为三小图广告
  */
 @property (nonatomic, readonly) BOOL isThreeImgsAd;
+
+/**
+ 是否为微信原生页广告 (可针对此广告类型来控制按钮展示文案为"去微信看看")
+ */
+@property (nonatomic, readonly) BOOL isWechatCanvasAd;
 
 /**
  返回广告的eCPM，单位：分
@@ -146,15 +161,5 @@ typedef NS_ENUM(NSInteger, GDTVastAdEventType) {
  * @param placeholder     图片加载过程中的占位图
  */
 - (void)bindImageViews:(NSArray<UIImageView *> *)imageViews placeholder:(UIImage *)placeholder;
-
-/**
- 广告大图Url
- */
-@property (nonatomic, copy, readonly) NSString *imageUrl GDT_DEPRECATED_MSG_ATTRIBUTE("属性即将废弃，请使用 bindImageViews:placeholder: 方法");
-
-/**
- 三小图广告的图片Url集合
- */
-@property (nonatomic, copy, readonly) NSArray *mediaUrlList GDT_DEPRECATED_MSG_ATTRIBUTE("属性即将废弃，请使用 bindImageViews:placeholder: 方法");
 
 @end

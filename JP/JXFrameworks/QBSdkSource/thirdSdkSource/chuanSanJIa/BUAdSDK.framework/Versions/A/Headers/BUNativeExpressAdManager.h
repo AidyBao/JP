@@ -19,7 +19,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-
+/// Please note: This Class does not take effect on Pangle global, only use it when you have traffic from mainland China.
 @interface BUNativeExpressAdManager : NSObject <BUMopubAdMarkUpDelegate>
 
 @property (nonatomic, strong, nullable) BUAdSlot *adslot;

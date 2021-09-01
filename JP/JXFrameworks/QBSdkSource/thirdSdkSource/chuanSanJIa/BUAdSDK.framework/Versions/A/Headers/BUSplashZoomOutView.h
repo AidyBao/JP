@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol BUSplashZoomOutViewDelegate;
 
+/// Please note: This Class does not take effect on Pangle global, only use it when you have traffic from mainland China.
 @interface BUSplashZoomOutView : UIView
 /*
 required.

@@ -44,6 +44,10 @@ class JXModifyNameViewController: UIViewController {
 
         let g1 = UITapGestureRecognizer(target: self, action: #selector(tap(sender:)))
         v1.addGestureRecognizer(g1)
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(zxTextFieldValueChange(_:)), name: UITextField.textDidChangeNotification, object: nil)
+        
     }
     
     @objc func tap(sender: UITapGestureRecognizer) {
@@ -52,6 +56,26 @@ class JXModifyNameViewController: UIViewController {
             self.v1.endEditing(true)
         }
     }
+    
+    @objc func zxTextFieldValueChange(_ notice: Notification) {
+        if let textF = notice.object as? UITextField {
+            if let text = textF.text, text.count > 6 {
+                self.nameTextF.text = text.subs(to: 6)
+                ZXHUD.showFailure(in: self.view, text: "昵称不能大于6位！", delay: ZX.HUDDelay)
+            }else{
+                if let selectedRange = textF.markedTextRange {
+                    if let newText = textF.text(in: selectedRange) {
+                        if !newText.isEmpty, newText.count > 6 {
+                            self.nameTextF.text = textF.text?.subs(to: 6)
+                            ZXHUD.showFailure(in: self.view, text: "昵称不能大于6位！", delay: ZX.HUDDelay)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -96,31 +120,32 @@ class JXModifyNameViewController: UIViewController {
 
 extension JXModifyNameViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if textField == self.nameTextF {
-            if let inputMode = textField.textInputMode, let language = inputMode.primaryLanguage, language.hasPrefix("zh") {
-                if let newrange = textField.markedTextRange {
-                    let start = textField.offset(from: textField.beginningOfDocument, to: newrange.start)
-                    if start > 4 {
-                        ZXHUD.showFailure(in: self.view, text: "昵称不能大于4位！", delay: ZX.HUDDelay)
-                        return false
-                    }
-                }else{
-                    if let text = textField.text {
-                        if text.count + string.count - range.length > 4 {
-                            ZXHUD.showFailure(in: self.view, text: "昵称不能大于4位！", delay: ZX.HUDDelay)
-                            return false
-                        }
-                    }
-                }
-            }else{
-                if let text = textField.text {
-                    if text.count + string.count - range.length > 4 {
-                        ZXHUD.showFailure(in: self.view, text: "昵称不能大于4位！", delay: ZX.HUDDelay)
-                        return false
-                    }
-                }
-            }
-        }
+//        if textField == self.nameTextF {
+//            if let inputMode = textField.textInputMode, let language = inputMode.primaryLanguage, language.hasPrefix("zh") {
+//                if let newrange = textField.markedTextRange {
+//                    let start = textField.offset(from: textField.beginningOfDocument, to: newrange.start)
+//                    if start > 4 {
+//                        ZXHUD.showFailure(in: self.view, text: "昵称不能大于4位！", delay: ZX.HUDDelay)
+//                        return false
+//                    }
+//                }else{
+//                    if let text = textField.text {
+//                        if text.count + string.count - range.length > 4 {
+//                            ZXHUD.showFailure(in: self.view, text: "昵称不能大于4位！", delay: ZX.HUDDelay)
+//                            return false
+//                        }
+//                    }
+//                }
+//            }else{
+//                if let text = textField.text {
+//                    if text.count + string.count - range.length > 4 {
+//                        ZXHUD.showFailure(in: self.view, text: "昵称不能大于4位！", delay: ZX.HUDDelay)
+//                        return false
+//                    }
+//                }
+//            }
+//        }
         return true
     }
+
 }

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GDTSDKDefines.h"
+#import "GDTServerSideVerificationOptions.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -27,6 +28,22 @@ NS_ASSUME_NONNULL_BEGIN
  *  当接收服务器返回的广告数据失败后调用该函数
  */
 - (void)unifiedInterstitialFailToLoadAd:(GDTUnifiedInterstitialAd *)unifiedInterstitial error:(NSError *)error;
+
+/**
+ *  插屏2.0广告视频缓存完成
+ */
+- (void)unifiedInterstitialDidDownloadVideo:(GDTUnifiedInterstitialAd *)unifiedInterstitial;
+
+/**
+ *  插屏2.0广告渲染成功
+ *  建议在此回调后展示广告
+ */
+- (void)unifiedInterstitialRenderSuccess:(GDTUnifiedInterstitialAd *)unifiedInterstitial;
+
+/**
+ *  插屏2.0广告渲染失败
+ */
+- (void)unifiedInterstitialRenderFail:(GDTUnifiedInterstitialAd *)unifiedInterstitial error:(NSError *)error;
 
 /**
  *  插屏2.0广告将要展示回调
@@ -112,6 +129,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)unifiedInterstitialAdViewDidDismissVideoVC:(GDTUnifiedInterstitialAd *)unifiedInterstitial;
 
+/**
+ * 插屏激励广告视频播放达到激励条件回调（只有插屏激励广告位才会有此回调）
+
+ @param unifiedInterstitial GDTUnifiedInterstitialAd 实例
+ @param info 包含此次广告行为的一些信息，例如 @{@"GDT_TRANS_ID":@"930f1fc8ac59983bbdf4548ee40ac353"}, 通过@“GDT_TRANS_ID”可获取此次广告行为的交易id
+ */
+- (void)unifiedInterstitialAdDidRewardEffective:(GDTUnifiedInterstitialAd *)unifiedInterstitial info:(NSDictionary *)info;
+
 @end
 
 @interface GDTUnifiedInterstitialAd : NSObject
@@ -127,12 +152,20 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<GDTUnifiedInterstitialAdDelegate> delegate;
 
 @property (nonatomic, readonly) NSString *placementId;
+@property (nonatomic, strong) GDTServerSideVerificationOptions *serverSideVerificationOptions;
 
 /**
  *  构造方法
  *  详解：placementId - 广告位 ID
  */
 - (instancetype)initWithPlacementId:(NSString *)placementId;
+
+/**
+ *  构造方法, S2S bidding 后获取到 token 再调用此方法
+ *  @param placementId  广告位 ID
+ *  @param token  通过 Server Bidding 请求回来的 token
+ */
+- (instancetype)initWithPlacementId:(NSString *)placementId token:(NSString *)token;
 
 /**
  *  构造方法
@@ -168,6 +201,20 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)presentFullScreenAdFromRootViewController:(UIViewController *)rootViewController;
 
 /**
+ *  竟胜之后调用, 需要在调用广告 show 之前调用
+ *  @param price - 竟胜价格 (单位: 分)
+ */
+- (void)sendWinNotificationWithPrice:(NSInteger)price;
+
+/**
+ *  竟败之后调用
+ *  @param price - 竟胜价格 (单位: 分)
+ *  @param reason - 优量汇广告竟败原因
+ *  @param adnID - adnID
+ */
+- (void)sendLossNotificationWithWinnerPrice:(NSInteger)price lossReason:(GDTAdBiddingLossReason)reason winnerAdnID:(NSString *)adnID;
+
+/**
  返回广告的eCPM，单位：分
 
  @return 成功返回一个大于等于0的值，-1表示无权限或后台出现异常
@@ -199,13 +246,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL detailPageVideoMuted;
 
 /**
- 请求视频的时长下限。
+ 请求视频的时长下限，插屏激励广告位设置此属性不生效
  以下两种情况会使用 0，1:不设置  2:minVideoDuration大于maxVideoDuration
 */
 @property (nonatomic) NSInteger minVideoDuration;
 
 /**
- 请求视频的时长上限，视频时长有效值范围为[5,180]。
+ 请求视频的时长上限，视频时长有效值范围为[5,180]，插屏激励广告位设置此属性不生效
  */
 @property (nonatomic) NSInteger maxVideoDuration;
 

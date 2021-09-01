@@ -109,9 +109,53 @@ NS_ASSUME_NONNULL_BEGIN
                viewController:(UIViewController *)viewController;
 
 /**
+ *  构造方法, S2S bidding 后获取到 token 再调用此方法
+ *  @param placementId  广告位 ID
+ *  @param token  通过 Server Bidding 请求回来的 token
+ *  @param viewController 视图控制器
+ */
+- (instancetype)initWithPlacementId:(NSString *)placementId
+                              token:(NSString *)token
+                     viewController:(UIViewController *)viewController;
+
+/**
  *  拉取并展示广告
  */
 - (void)loadAdAndShow;
+
+/**
+ 返回广告的eCPM，单位：分
+ 
+ @return 成功返回一个大于等于0的值，-1表示无权限或后台出现异常
+ */
+- (NSInteger)eCPM;
+
+/**
+ 返回广告的eCPM等级
+ 
+ @return 成功返回一个包含数字的string，@""或nil表示无权限或后台异常
+ */
+- (NSString *)eCPMLevel;
+
+/**
+ 返回广告平台名称
+
+ @return 当使用激励视频聚合功能时，用于区分广告平台
+ */
+- (NSString *)adNetworkName;
+
+/**
+ *  竟胜之后调用, 需要在调用广告 show 之前调用
+ *  @param price - 竟胜价格 (单位: 分)
+ */
+- (void)sendWinNotificationWithPrice:(NSInteger)price;
+/**
+ *  竟败之后调用
+ *  @param price - 竟胜价格 (单位: 分)
+ *  @param reason - 优量汇广告竟败原因
+ *  @param adnID - adnID
+ */
+- (void)sendLossNotificationWithWinnerPrice:(NSInteger)price lossReason:(GDTAdBiddingLossReason)reason winnerAdnID:(NSString *)adnID;
 
 @end
 

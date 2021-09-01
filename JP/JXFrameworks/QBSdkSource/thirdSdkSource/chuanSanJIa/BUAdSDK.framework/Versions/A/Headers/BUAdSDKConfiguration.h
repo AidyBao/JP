@@ -46,18 +46,17 @@ NS_ASSUME_NONNULL_BEGIN
 /// Custom set the CCPA of the user,CCPA is the short of General Data Protection Regulation,the interface only works in USA.
 /// CCPA  0: "sale" of personal information is permitted, 1: user has opted out of "sale" of personal information -1: default
 @property (nonatomic, strong) NSNumber *CCPA;
-
+/// Custom set the debugLog to print debug Log.
+/// debugLog 0: close debug log, 1: open debug log.
+@property (nonatomic, strong) NSNumber *debugLog;
 
 @property (nonatomic, strong) NSNumber *themeStatus;
-
-
-
 
 /// Custom set the AB vid of the user. Array element type is NSNumber
 @property (nonatomic, strong) NSArray<NSNumber *> *abvids;
 
 /// Custom set the tob ab sdk version of the user.
-@property (nonatomic, copy) NSString *abSDKVersion;
+@property (atomic, copy) NSString *abSDKVersion;
 
 /// Custom set idfa value
 /// You can change its value at any time
