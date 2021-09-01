@@ -23,8 +23,5 @@
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import "GDTUnifiedNativeAdView.h"
 
-//小说
-#import "YuemengAdSdkCenter.h"
-#import "BookStoreMgr.h"
 
 #endif /* JP_bridging_Header_h */

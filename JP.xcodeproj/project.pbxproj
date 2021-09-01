@@ -84,13 +84,10 @@
 		6EB64D1C26D73CAB00834F95 /* JXVideoDetailViewController+Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A1826D73CA900834F95 /* JXVideoDetailViewController+Player.swift */; };
 		6EB64D1D26D73CAB00834F95 /* JXMyVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64A1926D73CA900834F95 /* JXMyVideoPlayerViewController.xib */; };
 		6EB64D1E26D73CAB00834F95 /* JXActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A1F26D73CA900834F95 /* JXActivityManager.swift */; };
-		6EB64D1F26D73CAB00834F95 /* SJTaskMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A2126D73CA900834F95 /* SJTaskMainViewController.swift */; };
 		6EB64D2026D73CAB00834F95 /* JXWebGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A2226D73CA900834F95 /* JXWebGameViewController.swift */; };
 		6EB64D2126D73CAB00834F95 /* JXTaskRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A2326D73CA900834F95 /* JXTaskRootViewController.swift */; };
 		6EB64D2226D73CAB00834F95 /* JXTaskFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A2426D73CA900834F95 /* JXTaskFinishViewController.swift */; };
-		6EB64D2326D73CAB00834F95 /* SJTaskMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64A2526D73CA900834F95 /* SJTaskMainViewController.xib */; };
 		6EB64D2426D73CAB00834F95 /* JXTaskFinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64A2626D73CA900834F95 /* JXTaskFinishViewController.xib */; };
-		6EB64D2526D73CAB00834F95 /* SJTaskMainViewController+AD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A2726D73CA900834F95 /* SJTaskMainViewController+AD.swift */; };
 		6EB64D2626D73CAB00834F95 /* JXTaskRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64A2826D73CA900834F95 /* JXTaskRootViewController.xib */; };
 		6EB64D2726D73CAB00834F95 /* JXTaskRootViewController+AD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A2926D73CA900834F95 /* JXTaskRootViewController+AD.swift */; };
 		6EB64D2826D73CAB00834F95 /* JXWebGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64A2A26D73CA900834F95 /* JXWebGameViewController.xib */; };
@@ -99,10 +96,8 @@
 		6EB64D2B26D73CAB00834F95 /* JXActivityInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A2E26D73CA900834F95 /* JXActivityInfoModel.swift */; };
 		6EB64D2C26D73CAB00834F95 /* JXTaskOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A3026D73CA900834F95 /* JXTaskOneCell.swift */; };
 		6EB64D2D26D73CAB00834F95 /* JXTaskFourell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64A3126D73CA900834F95 /* JXTaskFourell.xib */; };
-		6EB64D2E26D73CAB00834F95 /* JXTaskTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64A3226D73CA900834F95 /* JXTaskTwoCell.xib */; };
 		6EB64D2F26D73CAB00834F95 /* JXTaskThreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64A3326D73CA900834F95 /* JXTaskThreeCell.xib */; };
 		6EB64D3026D73CAB00834F95 /* JXTaskOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64A3426D73CA900834F95 /* JXTaskOneCell.xib */; };
-		6EB64D3126D73CAB00834F95 /* JXTaskTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A3526D73CA900834F95 /* JXTaskTwoCell.swift */; };
 		6EB64D3226D73CAB00834F95 /* JXTaskFourell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A3626D73CA900834F95 /* JXTaskFourell.swift */; };
 		6EB64D3326D73CAB00834F95 /* JXTaskThreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64A3726D73CA900834F95 /* JXTaskThreeCell.swift */; };
 		6EB64D3426D73CAB00834F95 /* JXPromotionQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64A3D26D73CA900834F95 /* JXPromotionQRCodeViewController.xib */; };
@@ -307,8 +302,6 @@
 		6EB64DFB26D73CAC00834F95 /* UIImage+Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B5C26D73CAA00834F95 /* UIImage+Tag.swift */; };
 		6EB64DFC26D73CAC00834F95 /* zx_app_qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64B5D26D73CAA00834F95 /* zx_app_qrcode.png */; };
 		6EB64DFD26D73CAC00834F95 /* ZXBAlbumObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B5E26D73CAA00834F95 /* ZXBAlbumObserver.swift */; };
-		6EB64DFE26D73CAC00834F95 /* BookStoreMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B6426D73CAA00834F95 /* BookStoreMgr.m */; };
-		6EB64DFF26D73CAC00834F95 /* JXBookStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B6526D73CAA00834F95 /* JXBookStoreManager.swift */; };
 		6EB64E0026D73CAC00834F95 /* JXPowerValueViewController+Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B6B26D73CAA00834F95 /* JXPowerValueViewController+Tab.swift */; };
 		6EB64E0126D73CAC00834F95 /* JXPowerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B6C26D73CAA00834F95 /* JXPowerDetailViewController.swift */; };
 		6EB64E0226D73CAC00834F95 /* JXLastMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B6D26D73CAA00834F95 /* JXLastMonthViewController.swift */; };
@@ -329,12 +322,9 @@
 		6EB64E1126D73CAC00834F95 /* JXPowerOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B7E26D73CAA00834F95 /* JXPowerOneCell.swift */; };
 		6EB64E1226D73CAC00834F95 /* JXQYViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B8126D73CAA00834F95 /* JXQYViewModel.swift */; };
 		6EB64E1326D73CAC00834F95 /* JXCJModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B8226D73CAA00834F95 /* JXCJModelView.swift */; };
-		6EB64E1426D73CAC00834F95 /* SJInterestsMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64B8426D73CAA00834F95 /* SJInterestsMainViewController.xib */; };
 		6EB64E1526D73CAC00834F95 /* JXLuckyDBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64B8526D73CAA00834F95 /* JXLuckyDBViewController.xib */; };
 		6EB64E1626D73CAC00834F95 /* JXMyLuckyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B8626D73CAA00834F95 /* JXMyLuckyCodeViewController.swift */; };
-		6EB64E1726D73CAC00834F95 /* SJInterestsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B8726D73CAA00834F95 /* SJInterestsMainViewController.swift */; };
 		6EB64E1826D73CAC00834F95 /* JXLuckyCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64B8826D73CAA00834F95 /* JXLuckyCodeViewController.xib */; };
-		6EB64E1926D73CAC00834F95 /* SJInterestsMainViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B8926D73CAA00834F95 /* SJInterestsMainViewController+Table.swift */; };
 		6EB64E1A26D73CAC00834F95 /* JXLuckyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B8A26D73CAA00834F95 /* JXLuckyCodeViewController.swift */; };
 		6EB64E1B26D73CAC00834F95 /* JXLuckyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64B8B26D73CAA00834F95 /* JXLuckyViewController.xib */; };
 		6EB64E1C26D73CAC00834F95 /* JXLuckyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B8C26D73CAA00834F95 /* JXLuckyViewController.swift */; };
@@ -348,18 +338,12 @@
 		6EB64E2426D73CAC00834F95 /* JXLuckyFinishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B9626D73CAA00834F95 /* JXLuckyFinishCell.swift */; };
 		6EB64E2526D73CAC00834F95 /* JXLuckyCodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64B9726D73CAA00834F95 /* JXLuckyCodeCell.xib */; };
 		6EB64E2626D73CAC00834F95 /* JXLuckyWaitingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B9826D73CAA00834F95 /* JXLuckyWaitingCell.swift */; };
-		6EB64E2726D73CAC00834F95 /* JXQYOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64B9926D73CAA00834F95 /* JXQYOneCell.xib */; };
 		6EB64E2826D73CAC00834F95 /* JXLuckyFinishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64B9A26D73CAA00834F95 /* JXLuckyFinishCell.xib */; };
-		6EB64E2926D73CAC00834F95 /* JXQYTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B9B26D73CAA00834F95 /* JXQYTwoCell.swift */; };
-		6EB64E2A26D73CAC00834F95 /* JXQYThreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64B9C26D73CAA00834F95 /* JXQYThreeCell.xib */; };
 		6EB64E2B26D73CAC00834F95 /* JXLuckyGoodsCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B9D26D73CAA00834F95 /* JXLuckyGoodsCodeCell.swift */; };
 		6EB64E2C26D73CAC00834F95 /* JXLuckyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B9E26D73CAA00834F95 /* JXLuckyCell.swift */; };
-		6EB64E2D26D73CAC00834F95 /* JXQYThreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64B9F26D73CAA00834F95 /* JXQYThreeCell.swift */; };
 		6EB64E2E26D73CAC00834F95 /* JXLuckyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64BA026D73CAA00834F95 /* JXLuckyCell.xib */; };
 		6EB64E2F26D73CAC00834F95 /* JXLuckyGoodsCodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64BA126D73CAA00834F95 /* JXLuckyGoodsCodeCell.xib */; };
 		6EB64E3026D73CAC00834F95 /* JXLuckyWaitingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64BA226D73CAA00834F95 /* JXLuckyWaitingCell.xib */; };
-		6EB64E3126D73CAC00834F95 /* JXQYTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64BA326D73CAA00834F95 /* JXQYTwoCell.xib */; };
-		6EB64E3226D73CAC00834F95 /* JXQYOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64BA426D73CAA00834F95 /* JXQYOneCell.swift */; };
 		6EB64E3326D73CAC00834F95 /* SJAssetMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64BA926D73CAA00834F95 /* SJAssetMainViewController.xib */; };
 		6EB64E3426D73CAC00834F95 /* SJAssetMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64BAA26D73CAA00834F95 /* SJAssetMainViewController.swift */; };
 		6EB64E3526D73CAC00834F95 /* SJLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64BB026D73CAA00834F95 /* SJLaunchViewController.swift */; };
@@ -447,9 +431,6 @@
 		6EB64E8726D73CAC00834F95 /* ZolozOpenPlatformBuild.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB64C1826D73CAB00834F95 /* ZolozOpenPlatformBuild.framework */; };
 		6EB64E8826D73CAC00834F95 /* ZolozSensorServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB64C1926D73CAB00834F95 /* ZolozSensorServices.framework */; };
 		6EB64E8926D73CAC00834F95 /* deviceiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB64C1A26D73CAB00834F95 /* deviceiOS.framework */; };
-		6EB64E9026D73CAC00834F95 /* 阅盟阅读SDK(ios)文档.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64C4426D73CAB00834F95 /* 阅盟阅读SDK(ios)文档.pdf */; };
-		6EB64E9126D73CAC00834F95 /* yuemengsdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64C4626D73CAB00834F95 /* yuemengsdk.bundle */; };
-		6EB64E9226D73CAC00834F95 /* yuemengsdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB64C4726D73CAB00834F95 /* yuemengsdk.a */; };
 		6EB64E9326D73CAC00834F95 /* ZXSegmentMenuPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64C4A26D73CAB00834F95 /* ZXSegmentMenuPage.swift */; };
 		6EB64E9426D73CAC00834F95 /* JXVideoSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB64C4B26D73CAB00834F95 /* JXVideoSegment.swift */; };
 		6EB64E9526D73CAC00834F95 /* ZXSegmentMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB64C4C26D73CAB00834F95 /* ZXSegmentMenuCell.xib */; };
@@ -663,13 +644,10 @@
 		6EB64A1826D73CA900834F95 /* JXVideoDetailViewController+Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JXVideoDetailViewController+Player.swift"; sourceTree = "<group>"; };
 		6EB64A1926D73CA900834F95 /* JXMyVideoPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXMyVideoPlayerViewController.xib; sourceTree = "<group>"; };
 		6EB64A1F26D73CA900834F95 /* JXActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXActivityManager.swift; sourceTree = "<group>"; };
-		6EB64A2126D73CA900834F95 /* SJTaskMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJTaskMainViewController.swift; sourceTree = "<group>"; };
 		6EB64A2226D73CA900834F95 /* JXWebGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXWebGameViewController.swift; sourceTree = "<group>"; };
 		6EB64A2326D73CA900834F95 /* JXTaskRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXTaskRootViewController.swift; sourceTree = "<group>"; };
 		6EB64A2426D73CA900834F95 /* JXTaskFinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXTaskFinishViewController.swift; sourceTree = "<group>"; };
-		6EB64A2526D73CA900834F95 /* SJTaskMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJTaskMainViewController.xib; sourceTree = "<group>"; };
 		6EB64A2626D73CA900834F95 /* JXTaskFinishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXTaskFinishViewController.xib; sourceTree = "<group>"; };
-		6EB64A2726D73CA900834F95 /* SJTaskMainViewController+AD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SJTaskMainViewController+AD.swift"; sourceTree = "<group>"; };
 		6EB64A2826D73CA900834F95 /* JXTaskRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXTaskRootViewController.xib; sourceTree = "<group>"; };
 		6EB64A2926D73CA900834F95 /* JXTaskRootViewController+AD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JXTaskRootViewController+AD.swift"; sourceTree = "<group>"; };
 		6EB64A2A26D73CA900834F95 /* JXWebGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXWebGameViewController.xib; sourceTree = "<group>"; };
@@ -678,10 +656,8 @@
 		6EB64A2E26D73CA900834F95 /* JXActivityInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXActivityInfoModel.swift; sourceTree = "<group>"; };
 		6EB64A3026D73CA900834F95 /* JXTaskOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXTaskOneCell.swift; sourceTree = "<group>"; };
 		6EB64A3126D73CA900834F95 /* JXTaskFourell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXTaskFourell.xib; sourceTree = "<group>"; };
-		6EB64A3226D73CA900834F95 /* JXTaskTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXTaskTwoCell.xib; sourceTree = "<group>"; };
 		6EB64A3326D73CA900834F95 /* JXTaskThreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXTaskThreeCell.xib; sourceTree = "<group>"; };
 		6EB64A3426D73CA900834F95 /* JXTaskOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXTaskOneCell.xib; sourceTree = "<group>"; };
-		6EB64A3526D73CA900834F95 /* JXTaskTwoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXTaskTwoCell.swift; sourceTree = "<group>"; };
 		6EB64A3626D73CA900834F95 /* JXTaskFourell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXTaskFourell.swift; sourceTree = "<group>"; };
 		6EB64A3726D73CA900834F95 /* JXTaskThreeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXTaskThreeCell.swift; sourceTree = "<group>"; };
 		6EB64A3D26D73CA900834F95 /* JXPromotionQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXPromotionQRCodeViewController.xib; sourceTree = "<group>"; };
@@ -886,9 +862,6 @@
 		6EB64B5C26D73CAA00834F95 /* UIImage+Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Tag.swift"; sourceTree = "<group>"; };
 		6EB64B5D26D73CAA00834F95 /* zx_app_qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zx_app_qrcode.png; sourceTree = "<group>"; };
 		6EB64B5E26D73CAA00834F95 /* ZXBAlbumObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXBAlbumObserver.swift; sourceTree = "<group>"; };
-		6EB64B6326D73CAA00834F95 /* BookStoreMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStoreMgr.h; sourceTree = "<group>"; };
-		6EB64B6426D73CAA00834F95 /* BookStoreMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookStoreMgr.m; sourceTree = "<group>"; };
-		6EB64B6526D73CAA00834F95 /* JXBookStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXBookStoreManager.swift; sourceTree = "<group>"; };
 		6EB64B6B26D73CAA00834F95 /* JXPowerValueViewController+Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JXPowerValueViewController+Tab.swift"; sourceTree = "<group>"; };
 		6EB64B6C26D73CAA00834F95 /* JXPowerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPowerDetailViewController.swift; sourceTree = "<group>"; };
 		6EB64B6D26D73CAA00834F95 /* JXLastMonthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLastMonthViewController.swift; sourceTree = "<group>"; };
@@ -909,12 +882,9 @@
 		6EB64B7E26D73CAA00834F95 /* JXPowerOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPowerOneCell.swift; sourceTree = "<group>"; };
 		6EB64B8126D73CAA00834F95 /* JXQYViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXQYViewModel.swift; sourceTree = "<group>"; };
 		6EB64B8226D73CAA00834F95 /* JXCJModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXCJModelView.swift; sourceTree = "<group>"; };
-		6EB64B8426D73CAA00834F95 /* SJInterestsMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJInterestsMainViewController.xib; sourceTree = "<group>"; };
 		6EB64B8526D73CAA00834F95 /* JXLuckyDBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXLuckyDBViewController.xib; sourceTree = "<group>"; };
 		6EB64B8626D73CAA00834F95 /* JXMyLuckyCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXMyLuckyCodeViewController.swift; sourceTree = "<group>"; };
-		6EB64B8726D73CAA00834F95 /* SJInterestsMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJInterestsMainViewController.swift; sourceTree = "<group>"; };
 		6EB64B8826D73CAA00834F95 /* JXLuckyCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXLuckyCodeViewController.xib; sourceTree = "<group>"; };
-		6EB64B8926D73CAA00834F95 /* SJInterestsMainViewController+Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SJInterestsMainViewController+Table.swift"; sourceTree = "<group>"; };
 		6EB64B8A26D73CAA00834F95 /* JXLuckyCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLuckyCodeViewController.swift; sourceTree = "<group>"; };
 		6EB64B8B26D73CAA00834F95 /* JXLuckyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXLuckyViewController.xib; sourceTree = "<group>"; };
 		6EB64B8C26D73CAA00834F95 /* JXLuckyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLuckyViewController.swift; sourceTree = "<group>"; };
@@ -928,18 +898,12 @@
 		6EB64B9626D73CAA00834F95 /* JXLuckyFinishCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLuckyFinishCell.swift; sourceTree = "<group>"; };
 		6EB64B9726D73CAA00834F95 /* JXLuckyCodeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXLuckyCodeCell.xib; sourceTree = "<group>"; };
 		6EB64B9826D73CAA00834F95 /* JXLuckyWaitingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLuckyWaitingCell.swift; sourceTree = "<group>"; };
-		6EB64B9926D73CAA00834F95 /* JXQYOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXQYOneCell.xib; sourceTree = "<group>"; };
 		6EB64B9A26D73CAA00834F95 /* JXLuckyFinishCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXLuckyFinishCell.xib; sourceTree = "<group>"; };
-		6EB64B9B26D73CAA00834F95 /* JXQYTwoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXQYTwoCell.swift; sourceTree = "<group>"; };
-		6EB64B9C26D73CAA00834F95 /* JXQYThreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXQYThreeCell.xib; sourceTree = "<group>"; };
 		6EB64B9D26D73CAA00834F95 /* JXLuckyGoodsCodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLuckyGoodsCodeCell.swift; sourceTree = "<group>"; };
 		6EB64B9E26D73CAA00834F95 /* JXLuckyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXLuckyCell.swift; sourceTree = "<group>"; };
-		6EB64B9F26D73CAA00834F95 /* JXQYThreeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXQYThreeCell.swift; sourceTree = "<group>"; };
 		6EB64BA026D73CAA00834F95 /* JXLuckyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXLuckyCell.xib; sourceTree = "<group>"; };
 		6EB64BA126D73CAA00834F95 /* JXLuckyGoodsCodeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXLuckyGoodsCodeCell.xib; sourceTree = "<group>"; };
 		6EB64BA226D73CAA00834F95 /* JXLuckyWaitingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXLuckyWaitingCell.xib; sourceTree = "<group>"; };
-		6EB64BA326D73CAA00834F95 /* JXQYTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXQYTwoCell.xib; sourceTree = "<group>"; };
-		6EB64BA426D73CAA00834F95 /* JXQYOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXQYOneCell.swift; sourceTree = "<group>"; };
 		6EB64BA926D73CAA00834F95 /* SJAssetMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJAssetMainViewController.xib; sourceTree = "<group>"; };
 		6EB64BAA26D73CAA00834F95 /* SJAssetMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJAssetMainViewController.swift; sourceTree = "<group>"; };
 		6EB64BB026D73CAA00834F95 /* SJLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SJLaunchViewController.swift; sourceTree = "<group>"; };
@@ -1027,10 +991,6 @@
 		6EB64C1826D73CAB00834F95 /* ZolozOpenPlatformBuild.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZolozOpenPlatformBuild.framework; sourceTree = "<group>"; };
 		6EB64C1926D73CAB00834F95 /* ZolozSensorServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZolozSensorServices.framework; sourceTree = "<group>"; };
 		6EB64C1A26D73CAB00834F95 /* deviceiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = deviceiOS.framework; sourceTree = "<group>"; };
-		6EB64C4426D73CAB00834F95 /* 阅盟阅读SDK(ios)文档.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "阅盟阅读SDK(ios)文档.pdf"; sourceTree = "<group>"; };
-		6EB64C4526D73CAB00834F95 /* YuemengAdSdkCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuemengAdSdkCenter.h; sourceTree = "<group>"; };
-		6EB64C4626D73CAB00834F95 /* yuemengsdk.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = yuemengsdk.bundle; sourceTree = "<group>"; };
-		6EB64C4726D73CAB00834F95 /* yuemengsdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = yuemengsdk.a; sourceTree = "<group>"; };
 		6EB64C4A26D73CAB00834F95 /* ZXSegmentMenuPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXSegmentMenuPage.swift; sourceTree = "<group>"; };
 		6EB64C4B26D73CAB00834F95 /* JXVideoSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXVideoSegment.swift; sourceTree = "<group>"; };
 		6EB64C4C26D73CAB00834F95 /* ZXSegmentMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXSegmentMenuCell.xib; sourceTree = "<group>"; };
@@ -1228,7 +1188,6 @@
 				6EB64E7C26D73CAC00834F95 /* MPRemoteLogging.framework in Frameworks */,
 				6EB64E8626D73CAC00834F95 /* APPSecuritySDK.framework in Frameworks */,
 				6ED82E2026DCB2B800921823 /* BUCNAuxiliary.framework in Frameworks */,
-				6EB64E9226D73CAC00834F95 /* yuemengsdk.a in Frameworks */,
 				6EB64E8226D73CAC00834F95 /* ZolozMobileRPC.framework in Frameworks */,
 				6EB64E8926D73CAC00834F95 /* deviceiOS.framework in Frameworks */,
 				6ED82E1F26DCB2B800921823 /* BUAdSDK.framework in Frameworks */,
@@ -1648,15 +1607,12 @@
 		6EB64A2026D73CA900834F95 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				6EB64A2126D73CA900834F95 /* SJTaskMainViewController.swift */,
-				6EB64A2226D73CA900834F95 /* JXWebGameViewController.swift */,
-				6EB64A2326D73CA900834F95 /* JXTaskRootViewController.swift */,
 				6EB64A2426D73CA900834F95 /* JXTaskFinishViewController.swift */,
-				6EB64A2526D73CA900834F95 /* SJTaskMainViewController.xib */,
 				6EB64A2626D73CA900834F95 /* JXTaskFinishViewController.xib */,
-				6EB64A2726D73CA900834F95 /* SJTaskMainViewController+AD.swift */,
-				6EB64A2826D73CA900834F95 /* JXTaskRootViewController.xib */,
+				6EB64A2326D73CA900834F95 /* JXTaskRootViewController.swift */,
 				6EB64A2926D73CA900834F95 /* JXTaskRootViewController+AD.swift */,
+				6EB64A2826D73CA900834F95 /* JXTaskRootViewController.xib */,
+				6EB64A2226D73CA900834F95 /* JXWebGameViewController.swift */,
 				6EB64A2A26D73CA900834F95 /* JXWebGameViewController.xib */,
 			);
 			path = VC;
@@ -1676,13 +1632,11 @@
 			isa = PBXGroup;
 			children = (
 				6EB64A3026D73CA900834F95 /* JXTaskOneCell.swift */,
-				6EB64A3126D73CA900834F95 /* JXTaskFourell.xib */,
-				6EB64A3226D73CA900834F95 /* JXTaskTwoCell.xib */,
-				6EB64A3326D73CA900834F95 /* JXTaskThreeCell.xib */,
 				6EB64A3426D73CA900834F95 /* JXTaskOneCell.xib */,
-				6EB64A3526D73CA900834F95 /* JXTaskTwoCell.swift */,
 				6EB64A3626D73CA900834F95 /* JXTaskFourell.swift */,
+				6EB64A3126D73CA900834F95 /* JXTaskFourell.xib */,
 				6EB64A3726D73CA900834F95 /* JXTaskThreeCell.swift */,
+				6EB64A3326D73CA900834F95 /* JXTaskThreeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2632,53 +2586,10 @@
 		6EB64B5F26D73CAA00834F95 /* Tab3_Interests */ = {
 			isa = PBXGroup;
 			children = (
-				6EB64B6026D73CAA00834F95 /* YueMeng */,
 				6EB64B6826D73CAA00834F95 /* ZLZ */,
 				6EB64B7F26D73CAA00834F95 /* Main */,
 			);
 			path = Tab3_Interests;
-			sourceTree = "<group>";
-		};
-		6EB64B6026D73CAA00834F95 /* YueMeng */ = {
-			isa = PBXGroup;
-			children = (
-				6EB64B6126D73CAA00834F95 /* ViewModel */,
-				6EB64B6226D73CAA00834F95 /* VC */,
-				6EB64B6626D73CAA00834F95 /* Model */,
-				6EB64B6726D73CAA00834F95 /* View */,
-			);
-			path = YueMeng;
-			sourceTree = "<group>";
-		};
-		6EB64B6126D73CAA00834F95 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		6EB64B6226D73CAA00834F95 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6EB64B6326D73CAA00834F95 /* BookStoreMgr.h */,
-				6EB64B6426D73CAA00834F95 /* BookStoreMgr.m */,
-				6EB64B6526D73CAA00834F95 /* JXBookStoreManager.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6EB64B6626D73CAA00834F95 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6EB64B6726D73CAA00834F95 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		6EB64B6826D73CAA00834F95 /* ZLZ */ = {
@@ -2761,12 +2672,9 @@
 		6EB64B8326D73CAA00834F95 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				6EB64B8426D73CAA00834F95 /* SJInterestsMainViewController.xib */,
 				6EB64B8526D73CAA00834F95 /* JXLuckyDBViewController.xib */,
 				6EB64B8626D73CAA00834F95 /* JXMyLuckyCodeViewController.swift */,
-				6EB64B8726D73CAA00834F95 /* SJInterestsMainViewController.swift */,
 				6EB64B8826D73CAA00834F95 /* JXLuckyCodeViewController.xib */,
-				6EB64B8926D73CAA00834F95 /* SJInterestsMainViewController+Table.swift */,
 				6EB64B8A26D73CAA00834F95 /* JXLuckyCodeViewController.swift */,
 				6EB64B8B26D73CAA00834F95 /* JXLuckyViewController.xib */,
 				6EB64B8C26D73CAA00834F95 /* JXLuckyViewController.swift */,
@@ -2793,19 +2701,13 @@
 				6EB64B9526D73CAA00834F95 /* JXLuckyCodeCell.swift */,
 				6EB64B9626D73CAA00834F95 /* JXLuckyFinishCell.swift */,
 				6EB64B9726D73CAA00834F95 /* JXLuckyCodeCell.xib */,
-				6EB64B9826D73CAA00834F95 /* JXLuckyWaitingCell.swift */,
-				6EB64B9926D73CAA00834F95 /* JXQYOneCell.xib */,
 				6EB64B9A26D73CAA00834F95 /* JXLuckyFinishCell.xib */,
-				6EB64B9B26D73CAA00834F95 /* JXQYTwoCell.swift */,
-				6EB64B9C26D73CAA00834F95 /* JXQYThreeCell.xib */,
 				6EB64B9D26D73CAA00834F95 /* JXLuckyGoodsCodeCell.swift */,
 				6EB64B9E26D73CAA00834F95 /* JXLuckyCell.swift */,
-				6EB64B9F26D73CAA00834F95 /* JXQYThreeCell.swift */,
 				6EB64BA026D73CAA00834F95 /* JXLuckyCell.xib */,
 				6EB64BA126D73CAA00834F95 /* JXLuckyGoodsCodeCell.xib */,
+				6EB64B9826D73CAA00834F95 /* JXLuckyWaitingCell.swift */,
 				6EB64BA226D73CAA00834F95 /* JXLuckyWaitingCell.xib */,
-				6EB64BA326D73CAA00834F95 /* JXQYTwoCell.xib */,
-				6EB64BA426D73CAA00834F95 /* JXQYOneCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3114,7 +3016,6 @@
 			children = (
 				6EB64C0A26D73CAB00834F95 /* Aliyun */,
 				6EB64C1B26D73CAB00834F95 /* QBSdkSource */,
-				6EB64C4326D73CAB00834F95 /* YuemengSDK */,
 			);
 			path = JXFrameworks;
 			sourceTree = "<group>";
@@ -3149,17 +3050,6 @@
 				6ED82DED26DCB2B800921823 /* thirdSdkSource */,
 			);
 			path = QBSdkSource;
-			sourceTree = "<group>";
-		};
-		6EB64C4326D73CAB00834F95 /* YuemengSDK */ = {
-			isa = PBXGroup;
-			children = (
-				6EB64C4426D73CAB00834F95 /* 阅盟阅读SDK(ios)文档.pdf */,
-				6EB64C4526D73CAB00834F95 /* YuemengAdSdkCenter.h */,
-				6EB64C4626D73CAB00834F95 /* yuemengsdk.bundle */,
-				6EB64C4726D73CAB00834F95 /* yuemengsdk.a */,
-			);
-			path = YuemengSDK;
 			sourceTree = "<group>";
 		};
 		6EB64C4826D73CAB00834F95 /* SJCommon */ = {
@@ -3721,7 +3611,6 @@
 				6EB64D3726D73CAB00834F95 /* JXCertificationViewController.xib in Resources */,
 				6EB64DA226D73CAB00834F95 /* JXGSVZHHeaderView.xib in Resources */,
 				6EB64DDE26D73CAB00834F95 /* SJRegisterViewController.xib in Resources */,
-				6EB64E3126D73CAC00834F95 /* JXQYTwoCell.xib in Resources */,
 				6EB64D8626D73CAB00834F95 /* JXSystemNoticeViewController.xib in Resources */,
 				6EB64DAC26D73CAB00834F95 /* JXCallbackViewController.xib in Resources */,
 				6EB64D1926D73CAB00834F95 /* JXVideoDetailViewController.xib in Resources */,
@@ -3816,7 +3705,6 @@
 				6EB64E4C26D73CAC00834F95 /* JXGoodsDetailViewController.xib in Resources */,
 				6EB64E1526D73CAC00834F95 /* JXLuckyDBViewController.xib in Resources */,
 				6EB64EA926D73CAC00834F95 /* Address.plist in Resources */,
-				6EB64E1426D73CAC00834F95 /* SJInterestsMainViewController.xib in Resources */,
 				6EB64DA126D73CAB00834F95 /* JXLimitHeaderCell.xib in Resources */,
 				6EB64D8426D73CAB00834F95 /* JXSysNoticeDetailViewController.xib in Resources */,
 				6EB64D7226D73CAB00834F95 /* JXJYZListViewController.xib in Resources */,
@@ -3829,7 +3717,6 @@
 				6EB64E6F26D73CAC00834F95 /* JXLogin.xcassets in Resources */,
 				6EB64E3F26D73CAC00834F95 /* JXOrderDetailViewController.xib in Resources */,
 				6EB64E6E26D73CAC00834F95 /* ZXLauchLog.xcassets in Resources */,
-				6EB64E2A26D73CAC00834F95 /* JXQYThreeCell.xib in Resources */,
 				6EB64E6926D73CAC00834F95 /* jx_task_kill03.gif in Resources */,
 				6EB64E0D26D73CAC00834F95 /* JXPowerTwoCell.xib in Resources */,
 				6EB64DD426D73CAB00834F95 /* JXCityListViewController.xib in Resources */,
@@ -3848,11 +3735,9 @@
 				6EB64DBD26D73CAB00834F95 /* JXCallbackFinishCell.xib in Resources */,
 				6EB64D0926D73CAB00834F95 /* JXVideoRootViewController.xib in Resources */,
 				6EB64CEF26D73CAB00834F95 /* JXKillOneCell.xib in Resources */,
-				6EB64D2E26D73CAB00834F95 /* JXTaskTwoCell.xib in Resources */,
 				6EB64D6026D73CAB00834F95 /* JXCardHeaderView.xib in Resources */,
 				6EB64EB626D73CAC00834F95 /* ZXLoading@2x.png in Resources */,
 				6EB64CEA26D73CAB00834F95 /* JXCommentListCell.xib in Resources */,
-				6EB64E9026D73CAC00834F95 /* 阅盟阅读SDK(ios)文档.pdf in Resources */,
 				6EB64E0626D73CAC00834F95 /* JXLastMonthViewController.xib in Resources */,
 				6EB64DDB26D73CAB00834F95 /* JXVerCodeViewController.xib in Resources */,
 				6EB64CEE26D73CAB00834F95 /* JXKillViewController.xib in Resources */,
@@ -3868,13 +3753,11 @@
 				6EB64D7826D73CAB00834F95 /* JXMemberCollViewCell.xib in Resources */,
 				6EB64D4326D73CAB00834F95 /* JXPersonalViewController.xib in Resources */,
 				6EB64DFC26D73CAC00834F95 /* zx_app_qrcode.png in Resources */,
-				6EB64E2726D73CAC00834F95 /* JXQYOneCell.xib in Resources */,
 				6EB64CE826D73CAB00834F95 /* JXCommentHeader.xib in Resources */,
 				6EB64E4126D73CAC00834F95 /* JXOrderAddressCell.xib in Resources */,
 				6EB64E5426D73CAC00834F95 /* JXMallBannerCell.xib in Resources */,
 				6EB64D9426D73CAB00834F95 /* ZXAddressCell.xib in Resources */,
 				6EB64DC626D73CAB00834F95 /* SJUserRootToolCell.xib in Resources */,
-				6EB64E9126D73CAC00834F95 /* yuemengsdk.bundle in Resources */,
 				6EB64D5326D73CAB00834F95 /* JXExchangeSuccViewController.xib in Resources */,
 				6EB64E7926D73CAC00834F95 /* JXQY.xcassets in Resources */,
 				6EB64DBE26D73CAB00834F95 /* JXProblemSelectImgCell.xib in Resources */,
@@ -3884,7 +3767,6 @@
 				6EB64E2F26D73CAC00834F95 /* JXLuckyGoodsCodeCell.xib in Resources */,
 				6EB64EB926D73CAC00834F95 /* ZXFailure@3x.png in Resources */,
 				6EB64D5726D73CAB00834F95 /* JXCardsChangListCell.xib in Resources */,
-				6EB64D2326D73CAB00834F95 /* SJTaskMainViewController.xib in Resources */,
 				6EB64E0426D73CAC00834F95 /* JXPowerValueViewController.xib in Resources */,
 				6EB64EA626D73CAC00834F95 /* ZXAddressViewController.xib in Resources */,
 				6EB64D4526D73CAB00834F95 /* JXModifyLoginPassWordViewController.xib in Resources */,
@@ -4009,7 +3891,6 @@
 				6EB64E6726D73CAC00834F95 /* JXOrderListFooter.swift in Sources */,
 				6EB64DF026D73CAC00834F95 /* ZXUITableViewController.swift in Sources */,
 				6EB64D5526D73CAB00834F95 /* JXCardLevelModel.swift in Sources */,
-				6EB64E2D26D73CAC00834F95 /* JXQYThreeCell.swift in Sources */,
 				6EB64EEC26D73CAC00834F95 /* CommonDefine.swift in Sources */,
 				6EB64EC426D73CAC00834F95 /* ZXCountDownLable.swift in Sources */,
 				6EB64D6F26D73CAB00834F95 /* JXJYZListViewController.swift in Sources */,
@@ -4025,7 +3906,6 @@
 				6EB64DC026D73CAB00834F95 /* SJMineMainViewController.swift in Sources */,
 				6EB64E6826D73CAC00834F95 /* JXOrderListCell.swift in Sources */,
 				6EB64DF326D73CAC00834F95 /* ZXRootController.swift in Sources */,
-				6EB64E2926D73CAC00834F95 /* JXQYTwoCell.swift in Sources */,
 				6EB649C026D73CA000834F95 /* AppDelegate+JX.swift in Sources */,
 				6EB64D6526D73CAB00834F95 /* JXSchoolDetailViewController.swift in Sources */,
 				6EB64DF826D73CAC00834F95 /* ZXHShareService.swift in Sources */,
@@ -4044,7 +3924,6 @@
 				6EB64E0B26D73CAC00834F95 /* JXPowerTwoCell.swift in Sources */,
 				6EB64D0B26D73CAB00834F95 /* JXQBUnifiedNativeImageView.swift in Sources */,
 				6EB64D5826D73CAB00834F95 /* JXCardLevelCell.swift in Sources */,
-				6EB64E1926D73CAC00834F95 /* SJInterestsMainViewController+Table.swift in Sources */,
 				6EB64E3526D73CAC00834F95 /* SJLaunchViewController.swift in Sources */,
 				6EB64D4C26D73CAB00834F95 /* PagingListBaseView.swift in Sources */,
 				6EB64E2C26D73CAC00834F95 /* JXLuckyCell.swift in Sources */,
@@ -4142,7 +4021,6 @@
 				6EB64D4626D73CAB00834F95 /* JXModifyLoginPassWordViewController.swift in Sources */,
 				6EB64E4D26D73CAC00834F95 /* JXMallRootViewController.swift in Sources */,
 				6EB64EA526D73CAC00834F95 /* ZXURLSession.swift in Sources */,
-				6EB64DFE26D73CAC00834F95 /* BookStoreMgr.m in Sources */,
 				6EB64CEC26D73CAB00834F95 /* JXCommentListCell.swift in Sources */,
 				6EB64EDB26D73CAC00834F95 /* ZXDevice.swift in Sources */,
 				6EB64D1026D73CAB00834F95 /* JXJBViewController.swift in Sources */,
@@ -4153,14 +4031,12 @@
 				6EB64E5926D73CAC00834F95 /* JXGoodsDetailNameCell.swift in Sources */,
 				6EB64EA226D73CAC00834F95 /* BBSegment.swift in Sources */,
 				6EB64DF726D73CAC00834F95 /* ZXHWXShareService.swift in Sources */,
-				6EB64E3226D73CAC00834F95 /* JXQYOneCell.swift in Sources */,
 				6EB64EA026D73CAC00834F95 /* JXAlipayCenter.swift in Sources */,
 				6EB64F0426D73CAC00834F95 /* ZXLocationUtils.swift in Sources */,
 				6EB64EF726D73CAC00834F95 /* UIViewController+ZX.swift in Sources */,
 				6EB64D0D26D73CAB00834F95 /* SJVideoMainViewController.swift in Sources */,
 				6EB64DB926D73CAB00834F95 /* JXCallbackImgCell.swift in Sources */,
 				6EB64F0526D73CAC00834F95 /* ZXDateUtils.swift in Sources */,
-				6EB64DFF26D73CAC00834F95 /* JXBookStoreManager.swift in Sources */,
 				6EB64CFA26D73CAB00834F95 /* JXVideoDescriptionViewController.swift in Sources */,
 				6EB64D3D26D73CAB00834F95 /* JXAlipayAccountViewController.swift in Sources */,
 				6EB64DD526D73CAB00834F95 /* JXCityPartActivityModel.swift in Sources */,
@@ -4183,7 +4059,6 @@
 				6EB64D7026D73CAB00834F95 /* JXMemberViewController.swift in Sources */,
 				6EB64E9926D73CAC00834F95 /* DouYinBaseAnimation.swift in Sources */,
 				6EB64DDD26D73CAB00834F95 /* JXUnbindingViewController.swift in Sources */,
-				6EB64D3126D73CAB00834F95 /* JXTaskTwoCell.swift in Sources */,
 				6EB64DCB26D73CAB00834F95 /* SJUserRootHeaderCell.swift in Sources */,
 				6EB64D2926D73CAB00834F95 /* JXTaskExprInfo.swift in Sources */,
 				6EB64EC726D73CAC00834F95 /* ZXCountDownButton.swift in Sources */,
@@ -4197,14 +4072,12 @@
 				6EB64EEA26D73CAC00834F95 /* ZXNetwork.swift in Sources */,
 				6EB64DC326D73CAB00834F95 /* JXUserTeamSta.swift in Sources */,
 				6EB64F0326D73CAC00834F95 /* ZJAutoScrollLabel.swift in Sources */,
-				6EB64D2526D73CAB00834F95 /* SJTaskMainViewController+AD.swift in Sources */,
 				6EB64E3826D73CAC00834F95 /* ZXFlashModel.swift in Sources */,
 				6EB64D5626D73CAB00834F95 /* JXCardsChangListCell.swift in Sources */,
 				6EB64EA426D73CAC00834F95 /* ZXWXCenter.swift in Sources */,
 				6EB64EC626D73CAC00834F95 /* ZXCountDownProcess.swift in Sources */,
 				6EB64D4226D73CAB00834F95 /* JXPersonalViewController+Photo.swift in Sources */,
 				6EB64DEC26D73CAC00834F95 /* ZXCommonDicModel.swift in Sources */,
-				6EB64E1726D73CAC00834F95 /* SJInterestsMainViewController.swift in Sources */,
 				6EB64DEB26D73CAC00834F95 /* JXCommonManager.swift in Sources */,
 				6EB64CE626D73CAB00834F95 /* JXCommModel.swift in Sources */,
 				6EB64DE326D73CAC00834F95 /* JXVerCodeViewController.swift in Sources */,
@@ -4307,7 +4180,6 @@
 				6EB64EA326D73CAC00834F95 /* ZXSegment.swift in Sources */,
 				6EB64EF226D73CAC00834F95 /* UIColor+ZX.swift in Sources */,
 				6EB64DB226D73CAB00834F95 /* JXCallbackModel.swift in Sources */,
-				6EB64D1F26D73CAB00834F95 /* SJTaskMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4468,7 +4340,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JP/JXFrameworks/QBSdkSource",
 					"$(PROJECT_DIR)/JP/JXFrameworks/QBSdkSource/thirdSdkSource/gdt",
-					"$(PROJECT_DIR)/JP/JXFrameworks/YuemengSDK",
 					"$(PROJECT_DIR)/JP/JXFrameworks/QBSdkSource/QBSDK",
 				);
 				MARKETING_VERSION = 1.3;
@@ -4552,8 +4423,6 @@
 					"\"BioAuthAPI\"",
 					"-lxml2",
 					"-l\"c++abi\"",
-					"-force_load",
-					"$(SOURCE_ROOT)/JP/JXFrameworks/YuemengSDK/yuemengsdk.a",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fowit.gold.local;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4589,7 +4458,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JP/JXFrameworks/QBSdkSource",
 					"$(PROJECT_DIR)/JP/JXFrameworks/QBSdkSource/thirdSdkSource/gdt",
-					"$(PROJECT_DIR)/JP/JXFrameworks/YuemengSDK",
 					"$(PROJECT_DIR)/JP/JXFrameworks/QBSdkSource/QBSDK",
 				);
 				MARKETING_VERSION = 1.3;
@@ -4673,8 +4541,6 @@
 					"\"BioAuthAPI\"",
 					"-lxml2",
 					"-l\"c++abi\"",
-					"-force_load",
-					"$(SOURCE_ROOT)/JP/JXFrameworks/YuemengSDK/yuemengsdk.a",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fowit.gold.local;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -69,7 +69,7 @@ class JXLuckyWaitingCell: UITableViewCell {
             
             self.percent.text = "\(Int(Double(value).roundTo(places: 2)*100))" + "%"
             
-            self.totalAmount.text = "\(modle.totalAmount)积分"
+            self.totalAmount.text = "共需购物积分:\(modle.totalAmount)"
         }
     }
     

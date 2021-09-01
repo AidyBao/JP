@@ -10,8 +10,7 @@ import UIKit
 class JXTaskRootViewController: ZXUIViewController {
     override var zx_preferredNavgitaionBarHidden: Bool {return true}
     @IBOutlet weak var tabView: UITableView!
-    //小说
-    var admanager: JXBookStoreManager?
+    
     var currentPage = 1
     var selectModel: JXActivityInfoModel?
     //
@@ -45,17 +44,11 @@ class JXTaskRootViewController: ZXUIViewController {
 
         self.tabView.backgroundColor = UIColor.zx_colorRGB(22, 10, 83, 1)
         self.tabView.register(UINib(nibName: JXTaskOneCell.NibName, bundle: nil), forCellReuseIdentifier: JXTaskOneCell.reuseIdentifier)
-        self.tabView.register(UINib(nibName: JXTaskTwoCell.NibName, bundle: nil), forCellReuseIdentifier: JXTaskTwoCell.reuseIdentifier)
         self.tabView.register(UINib(nibName: JXTaskThreeCell.NibName, bundle: nil), forCellReuseIdentifier: JXTaskThreeCell.reuseIdentifier)
         self.tabView.register(UINib(nibName: JXTaskFourell.NibName, bundle: nil), forCellReuseIdentifier: JXTaskFourell.reuseIdentifier)
         
         //Refresh
         self.tabView.zx_addHeaderRefresh(showGif: true, target: self, action: #selector(self.zx_refresh))
-        
-        //小说
-        if let delegat = UIApplication.shared.delegate as? AppDelegate {
-            admanager = delegat.admanager
-        }
 
     }
     
@@ -112,7 +105,7 @@ extension JXTaskRootViewController: UITableViewDataSource {
         case 0:
             num = 1
         case 1:
-            num = 3
+            num = 2
         default:
             break
         }
@@ -141,11 +134,6 @@ extension JXTaskRootViewController: UITableViewDataSource {
                 if self.dataList.count > 0 {
                     cell.loadData(dataList: self.dataList)
                 }
-                return cell
-            case 2:
-                let cell: JXTaskTwoCell = tableView.dequeueReusableCell(withIdentifier: JXTaskTwoCell.reuseIdentifier, for: indexPath) as! JXTaskTwoCell
-                cell.delegate = self
-                cell.loadData(novalModel: self.novelMod, gameModel: self.gameMod)
                 return cell
             default:
                 return UITableViewCell.init(style: .default, reuseIdentifier: "UnKnowCell")
@@ -187,41 +175,6 @@ extension JXTaskRootViewController: UITableViewDelegate {
         default:
             break
         }
-    }
-}
-
-extension JXTaskRootViewController: JXTaskTwoCellDelegate {
-    func jx_goNoval(novalModel: JXTaskExprInfo?) {
-        admanager?.openBookStore()
-    }
-    
-    func jx_goGame(gameModel: JXTaskExprInfo?) {
-        let channel = "\(ZXAPIConst.ShandW.id)"
-        let openid  = "\(ZXUser.user.memberId)"
-        let time    = "\(ZXDateUtils.current.timeStamp())"
-        let nick    = "\(ZXUser.user.nickName.isEmpty ? "\(ZXUser.user.memberId)":ZXUser.user.nickName)"
-        let avatar  = "\(ZXUser.user.headUrl)"
-        let sex     = "\(ZXUser.user.sex)"
-        let phone   = "\(ZXUser.user.mobileNo)"
-        let appkey  = "\(ZXAPIConst.ShandW.appkey)"
-        
-        //签名
-        let str = "channel=\(channel)" + "&openid=\(openid)" + "&time=\(time)" + "&nick=\(nick)" + "&avatar=\(avatar)" + "&sex=\(sex)" + "&phone=\(phone)" + appkey
-//        guard let code_str = str.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
-//            return
-//        }
-        let md5_str = str.zx_md5String()
-        
-        
-        //编码
-        let str1 = "channel=\(channel)" + "&openid=\(openid)" + "&time=\(time)" + "&nick=\(nick)" +  "&avatar=\(avatar)" + "&sex=\(sex)" + "&phone=\(phone)"
-        guard let code_str1 = str1.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
-            return
-        }
-        
-        
-        let url = ZXAPIConst.ShandW.url + code_str1 + "&sign=\(md5_str)"  + "&sdw_simple=19" + "&sdw_game_back=1"
-        ZXWebViewViewController.show(superV: self, urlStr: "\(url)", title: "玩游戏")
     }
 }
 
