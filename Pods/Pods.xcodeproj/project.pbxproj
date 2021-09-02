@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = "AlipaySDK-iOS";
+			productName = "AlipaySDK-iOS";
 		};
 		8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */ = {
 			isa = PBXAggregateTarget;
@@ -24,6 +25,7 @@
 			dependencies = (
 			);
 			name = WechatOpenSDK;
+			productName = WechatOpenSDK;
 		};
 /* End PBXAggregateTarget section */
 
@@ -897,7 +899,7 @@
 		14467A4786C513A7A2D3498DC0F862C5 /* HTTPErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPErrorResponse.m; path = KTVCocoaHTTPServer/Classes/Responses/HTTPErrorResponse.m; sourceTree = "<group>"; };
 		14A3FE4DA4CE007A926AAC6102122F2E /* AliyunOSSiOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AliyunOSSiOS; path = AliyunOSSiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A42D843510C92CD28D22FCCB44D76E /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		14D1E3BAAD516FF60D46BD9E6D2CD7D1 /* aos_crc64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aos_crc64.c; path = AliyunOSSSDK/aos_crc64.c; sourceTree = "<group>"; };
+		14D1E3BAAD516FF60D46BD9E6D2CD7D1 /* aos_crc64.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aos_crc64.c; path = AliyunOSSSDK/aos_crc64.c; sourceTree = "<group>"; };
 		151781D6E88CD9637B6DD8771B9DE4F2 /* ZFPortraitViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZFPortraitViewController.m; path = ZFPlayer/Classes/Core/ZFPortraitViewController.m; sourceTree = "<group>"; };
 		159395BFB5A3BF0192424484C4F3E8B5 /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCubeTransition.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
 		15CA7F00702CB1C545FF3B3BB1AE0E53 /* HandyJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HandyJSON.debug.xcconfig; sourceTree = "<group>"; };
@@ -1267,7 +1269,7 @@
 		9D0FDAA47A6A49E9037C33EA0D81C2DA /* ZFPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZFPlayer-prefix.pch"; sourceTree = "<group>"; };
 		9D420807B155CC7E89C2477FA8C263B7 /* Pods-JP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JP-dummy.m"; sourceTree = "<group>"; };
 		9D82E2A992D7FF780CD6F876E8EF1BB7 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DD98191097CF8776CF300C563BD1AAB /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/General/KingfisherManager.swift; sourceTree = "<group>"; };
 		9DDE2005D289A0CD5F8CBC9C87BF831E /* NVActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScaleParty.swift; path = Source/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
 		9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainSwift; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1783,7 +1785,6 @@
 				EED6B7ED54F243B2E2F8BF41C806E4AB /* Resources */,
 				DB880A4115D790F0133632D691B5026D /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -1827,7 +1828,6 @@
 				ABAA3C34F89A270D229AB7EA9D71EC67 /* ZoomInOutAttributesAnimator.swift */,
 				E8B8EB6E73047B94BFC1F72A0D0C6602 /* Support Files */,
 			);
-			name = AnimatedCollectionViewLayout;
 			path = AnimatedCollectionViewLayout;
 			sourceTree = "<group>";
 		};
@@ -1934,7 +1934,6 @@
 				89DF068C45429D96A664591B61B59BBA /* WKInterfaceImage+Kingfisher.swift */,
 				FD1B8EC25DF215EB802AE995C1A9133B /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -1953,7 +1952,6 @@
 				6BD89392668103E4FADE7EBF3AED2941 /* Presenter */,
 				8660E56FAC3BDB74F6D380BD0B1E713B /* Support Files */,
 			);
-			name = NVActivityIndicatorView;
 			path = NVActivityIndicatorView;
 			sourceTree = "<group>";
 		};
@@ -2014,7 +2012,6 @@
 				83546B7FA038EE9F932079C8892C78CF /* TegKeychainConstants.swift */,
 				828C47768DA4217909ABE86CD8D9ACBE /* Support Files */,
 			);
-			name = KeychainSwift;
 			path = KeychainSwift;
 			sourceTree = "<group>";
 		};
@@ -2025,7 +2022,6 @@
 				D142327F311C0A1388CDD1B800D97ACF /* Resources */,
 				7A7A20CBF315EE49F40D7D203CFF5749 /* Support Files */,
 			);
-			name = "AlipaySDK-iOS";
 			path = "AlipaySDK-iOS";
 			sourceTree = "<group>";
 		};
@@ -2045,7 +2041,6 @@
 				4367F3902F477647B3525F35FC43BF4B /* LLToolFunc.swift */,
 				CFA3DAB4BC3F1BE4BEFBCE6E64F26075 /* Support Files */,
 			);
-			name = LLSegmentViewController;
 			path = LLSegmentViewController;
 			sourceTree = "<group>";
 		};
@@ -2108,7 +2103,6 @@
 				EFD0FCA2C7B977093715F46A4DFFDCB0 /* KTVHTTPCache.m */,
 				C4A6606F261FEAF622DBB8B5A24F5896 /* Support Files */,
 			);
-			name = KTVHTTPCache;
 			path = KTVHTTPCache;
 			sourceTree = "<group>";
 		};
@@ -2160,7 +2154,6 @@
 				1125E40DB3E3B62BBA9895AE58B7243E /* JXSegmentedViewTool.swift */,
 				2DD57C0B4D777B44C27FEFD0C86DF500 /* Support Files */,
 			);
-			name = JXSegmentedView;
 			path = JXSegmentedView;
 			sourceTree = "<group>";
 		};
@@ -2300,7 +2293,6 @@
 				14A42D843510C92CD28D22FCCB44D76E /* GCDAsyncUdpSocket.m */,
 				A3DD8DF3D3B561E6D51EB2ED2E4636AD /* Support Files */,
 			);
-			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -2347,7 +2339,6 @@
 				5AC4EF346978BCCB505A70FD31F40506 /* WebSocket.m */,
 				EEC03C528928E3AA5F2D6079C24D114D /* Support Files */,
 			);
-			name = KTVCocoaHTTPServer;
 			path = KTVCocoaHTTPServer;
 			sourceTree = "<group>";
 		};
@@ -2453,7 +2444,6 @@
 				1A39A07EF9829024C3D5AEBBDDC10225 /* OSSXMLDictionary.m */,
 				F9F9095DD7241D053679FE4C65328870 /* Support Files */,
 			);
-			name = AliyunOSSiOS;
 			path = AliyunOSSiOS;
 			sourceTree = "<group>";
 		};
@@ -2533,7 +2523,6 @@
 				D028D5CA40B0D80581EC60E939B82A91 /* MBProgressHUD.m */,
 				76C7D2E1F8C6B067758DB3087E887BDC /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -2584,7 +2573,6 @@
 				866386646ADEF4BBF37C13CA7F957086 /* Full */,
 				73529560C5189022F4534C7D4E5C3577 /* Support Files */,
 			);
-			name = BMPlayer;
 			path = BMPlayer;
 			sourceTree = "<group>";
 		};
@@ -2627,7 +2615,6 @@
 				A0FAE8EA744A512375BA63E830FBEAF5 /* Frameworks */,
 				13033824EFA8F1D5165275049EB60A89 /* Support Files */,
 			);
-			name = WechatOpenSDK;
 			path = WechatOpenSDK;
 			sourceTree = "<group>";
 		};
@@ -2761,7 +2748,6 @@
 				2D59B392DB80A75623DBCD304DDEB4D4 /* UILayoutSupport+Extensions.swift */,
 				A76E4F903357867D522EF860DCFDAA0F /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -2806,7 +2792,6 @@
 				546932B50FBD27187A089E075DADC066 /* URLTransform.swift */,
 				63A1BA934B9E0768909B1E61BDF77143 /* Support Files */,
 			);
-			name = HandyJSON;
 			path = HandyJSON;
 			sourceTree = "<group>";
 		};
@@ -2826,7 +2811,6 @@
 				2277D563A01CD913A477E8DA402C0C7D /* Core */,
 				12C878E332D2D6165909F8A62EE94E45 /* Support Files */,
 			);
-			name = ZFPlayer;
 			path = ZFPlayer;
 			sourceTree = "<group>";
 		};
@@ -2922,7 +2906,6 @@
 				A0A387798C49BEEABF0F070329E48754 /* IQUIViewController+Additions.swift */,
 				BF82416AFEE14992CE3AF2DEDF61D807 /* Support Files */,
 			);
-			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
@@ -4487,7 +4470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4640,7 +4623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5659,7 +5642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5780,7 +5763,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -64,7 +64,7 @@ class ZXURLConst {
         //夺宝规则
         static let gameRule = ZXURLConst.WebCND.cdn + "88sjxc.com/otc/gameRule.html"
         //正式：商城
-        static let shop = ZXURLConst.WebCND.cdn + "88sjxc.com/otc/index.html#/shop"
+        static let shop = ZXURLConst.WebCND.cdn + "88sjxc.com/mShop/index.html#/"
 
     }
     
