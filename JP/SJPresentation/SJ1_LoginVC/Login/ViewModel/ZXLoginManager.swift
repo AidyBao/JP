@@ -67,8 +67,8 @@ class ZXLoginManager: NSObject {
                 if code == ZXAPI_SUCCESS {
                     if let data = content["data"] as? Dictionary<String,Any> {
                         ZXToken.token.save(data)
-//                        let model = ZXGlobalToken.deserialize(from: data)
-//                        ZXToken.zxToken = model
+                        let model = ZXGlobalToken.deserialize(from: data)
+                        ZXToken.zxToken = model
                         zxSuccess?(true,code,nil,nil)
                     }else{
                         zxSuccess?(true,code,nil,nil)

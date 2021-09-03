@@ -92,7 +92,7 @@ class JXMallRootWebViewController: ZXUIViewController {
         wkUController.add(self, name: MallWebJXToOC.method.MallOrder)
         configuration.userContentController = wkUController
 
-        self.webView = WKWebView.init(frame: CGRect(x: 0, y: 0, width: ZXBOUNDS_WIDTH, height: ZXBOUNDS_HEIGHT), configuration: configuration)
+        self.webView = WKWebView.init(frame: CGRect(x: 0, y: 0, width: ZXBOUNDS_WIDTH, height: ZXBOUNDS_HEIGHT - 88), configuration: configuration)
         self.webView.uiDelegate = self
         self.webView.navigationDelegate = self
         if #available(iOS 11.0, *) {
@@ -164,16 +164,5 @@ extension JXMallRootWebViewController: WKUIDelegate, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         
-    }
-    
-    @available(iOS 13.0, *)
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, preferences: WKWebpagePreferences, decisionHandler: @escaping (WKNavigationActionPolicy, WKWebpagePreferences) -> Void) {
-        if navigationAction.navigationType == .linkActivated {
-            
-        }
-        
-        decisionHandler(WKNavigationActionPolicy.allow, preferences)
-        let url = navigationAction.request.url?.absoluteString
-        print(url)
     }
 }

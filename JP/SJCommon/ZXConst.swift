@@ -32,27 +32,27 @@ class ZX {
 class ZXURLConst {
     struct Api {
         //正式
-//        static let url                  =   "https://api.88sjxc.com"
-//        static let port                 =   ""
-        //测试
-        static let url                  =   "https://www.88sjxc.com"
+        static let url                  =   "https://api.88sjxc.com"
         static let port                 =   ""
+        //测试
+//        static let url                  =   "https://www.88sjxc.com"
+//        static let port                 =   ""
     }
     
     struct Resource {
         //正式
-//        static let url                  =   "https://api.88sjxc.com"
-//        static let port                 =   ""
-        //测试
-        static let url                  =   "https://www.88sjxc.com"
+        static let url                  =   "https://api.88sjxc.com"
         static let port                 =   ""
+        //测试
+//        static let url                  =   "https://www.88sjxc.com"
+//        static let port                 =   ""
     }
     
     struct WebCND {
         //正式
-//        static let cdn    = "https://h5."
+        static let cdn    = "https://h5."
         //测试
-        static let cdn    = "https://www."
+//        static let cdn    = "https://www."
     }
     
     struct Web {
