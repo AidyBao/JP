@@ -2901,11 +2901,11 @@
 			isa = PBXGroup;
 			children = (
 				6EB64BD226D73CAA00834F95 /* JXMallRootWebViewController.swift */,
+				6EB64BD726D73CAA00834F95 /* JXMallRootWebViewController.xib */,
 				6EB64BD326D73CAA00834F95 /* JXGoodsDetailViewController.xib */,
 				6EB64BD426D73CAA00834F95 /* JXMallRootViewController.swift */,
 				6EB64BD526D73CAA00834F95 /* JXGoodsDetailViewController.swift */,
 				6EB64BD626D73CAA00834F95 /* JXMallRootViewController.xib */,
-				6EB64BD726D73CAA00834F95 /* JXMallRootWebViewController.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";

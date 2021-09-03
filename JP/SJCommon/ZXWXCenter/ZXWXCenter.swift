@@ -21,8 +21,7 @@ import HandyJSON
 //let WX_Code             = "AGGwx44a0d8375fd254e8" //自定义
 
 let WX_APPSECRET        = ""
-//let WX_APPID            = "wx817d788dade39d62"//old
-let WX_APPID            = "wxe7a5c89fbf4276ac"//新
+let WX_APPID            = "wx4fd9ae88fba4bb01"//新
 let WX_Code             = "JXwx817d788dade39d62" //自定义
 let UNIVERSAL_LINK      = "https://*.88sjxc.com/"
 

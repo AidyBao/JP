@@ -21,9 +21,10 @@ typealias JXMallWebViewCallback = (_ count: String) -> Void
 
 class JXMallRootWebViewController: ZXUIViewController {
     override var zx_preferredNavgitaionBarHidden: Bool {return true}
-    fileprivate var webView: WKWebView!
-    fileprivate var urlStr: String = ""
+    @objc fileprivate var webView: WKWebView!
+    fileprivate var urlStr: String = ZXURLConst.Web.shop + "?" + "token=\(ZXToken.token.userToken)"
     fileprivate var jxCallback: JXMallWebViewCallback? = nil
+    var observation: NSKeyValueObservation?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -53,11 +54,10 @@ class JXMallRootWebViewController: ZXUIViewController {
         
         self.zx_refresh()
         
-        //self.webView.scrollView.zx_addHeaderRefresh(showGif: true, target: self, action: #selector(zx_refresh))
+        self.webView.scrollView.zx_addHeaderRefresh(showGif: true, target: self, action: #selector(zx_refresh))
     }
     
     @objc override func zx_refresh() {
-        urlStr = ZXURLConst.Web.shop + "?" + "token=\(ZXToken.token.userToken)"
         if !urlStr.isEmpty {
             //只对URL中的空格字符做编码
             let set = CharacterSet(charactersIn: " ").inverted
@@ -93,6 +93,7 @@ class JXMallRootWebViewController: ZXUIViewController {
         configuration.userContentController = wkUController
 
         self.webView = WKWebView.init(frame: CGRect(x: 0, y: 0, width: ZXBOUNDS_WIDTH, height: ZXBOUNDS_HEIGHT), configuration: configuration)
+        self.webView.uiDelegate = self
         self.webView.navigationDelegate = self
         if #available(iOS 11.0, *) {
             self.webView.scrollView.contentInsetAdjustmentBehavior = .never
@@ -101,14 +102,23 @@ class JXMallRootWebViewController: ZXUIViewController {
         }
         self.view.insertSubview(self.webView, at: 0)
         self.webView.backgroundColor = UIColor.white
+        
+        observation = webView.observe(\.url, options: [.new,.old], changeHandler: { webVw, change in
+            guard let newUrl = change.newValue as? URL else {
+                return
+            }
+            weak var weakself = self
+            weakself?.urlStr = newUrl.absoluteString
+        })
     }
+
 
     @IBAction func backAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
     deinit {
-        
+        observation = nil
     }
 }
 
@@ -154,5 +164,16 @@ extension JXMallRootWebViewController: WKUIDelegate, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         
+    }
+    
+    @available(iOS 13.0, *)
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, preferences: WKWebpagePreferences, decisionHandler: @escaping (WKNavigationActionPolicy, WKWebpagePreferences) -> Void) {
+        if navigationAction.navigationType == .linkActivated {
+            
+        }
+        
+        decisionHandler(WKNavigationActionPolicy.allow, preferences)
+        let url = navigationAction.request.url?.absoluteString
+        print(url)
     }
 }
