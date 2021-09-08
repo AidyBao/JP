@@ -67,7 +67,7 @@ class JXLuckyWaitingCell: UITableViewCell {
             let value = Float(modle.turnAmount)/Float(modle.totalAmount)
             self.processView.setProgress(value, animated: true)
             
-            self.percent.text = "\(Int(Double(value).roundTo(places: 2)*100))" + "%"
+            self.percent.text = "\(Int(Double(value).zx_roundTo(places: 2)*100))" + "%"
             
             self.totalAmount.text = "共需购物积分:\(modle.totalAmount)"
         }

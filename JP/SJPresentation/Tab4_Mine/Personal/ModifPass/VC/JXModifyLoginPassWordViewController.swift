@@ -38,7 +38,7 @@ class JXModifyLoginPassWordViewController: ZXUIViewController {
         } else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
-        self.navigationItem.title = "修改登陆密码"
+        self.navigationItem.title = "修改登录密码"
         
         self.setUI()
         

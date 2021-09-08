@@ -134,7 +134,7 @@ class JXExchangTgViewController: ZXUIViewController {
         default:
             break
         }
-        self.gbLB.text = "\(ZXUser.user.pointsBalance.roundTo(places: 3))"
+        self.gbLB.text = "\(ZXUser.user.pointsBalance.zx_roundTo(places: 3))"
     }
     
     //MARK: - TextField

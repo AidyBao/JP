@@ -35,7 +35,7 @@ class JXCardHeaderView: UIView {
     
     func loaddata(notices: Array<JXCardNoticeModel>) {
         self.days.text = "连续答题:" + ZXUser.user.continDay + "天"
-        self.tgcount.text = "积分日产量:" + "\(ZXUser.user.todayPoints.truncate(places: 3))" + "积分"
+        self.tgcount.text = "积分日产量:" + "\(ZXUser.user.todayPoints.zx_truncate(places: 3))" + "积分"
         
         self.winnerList.reloadData(notices)
     }

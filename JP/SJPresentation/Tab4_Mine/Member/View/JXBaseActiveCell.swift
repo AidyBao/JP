@@ -67,7 +67,7 @@ class JXBaseActiveCell: UITableViewCell {
                 //self.lb1.text = mod.tg_businessStr
                 //self.lb3.text = mod.tg_exchangeQuotaStr
                 self.lb1.text = mod.typeChName
-                self.lb3.text = mod.directionChName + "\(mod.exchangeQuota.truncate(places: 3))"
+                self.lb3.text = mod.directionChName + "\(mod.exchangeQuota.zx_truncate(places: 3))"
             case .TG:
                 self.unitLB.isHidden = false
                 unitLBGap.constant = 5
@@ -76,7 +76,7 @@ class JXBaseActiveCell: UITableViewCell {
                 //self.lb1.text = mod.tg_businessStr
                 //self.lb3.text = mod.tg_exchangeQuotaStr
                 self.lb1.text = mod.typeChName
-                self.lb3.text = mod.directionChName + "\(mod.exchangeQuota.truncate(places: 3))"
+                self.lb3.text = mod.directionChName + "\(mod.exchangeQuota.zx_truncate(places: 3))"
                 if mod.business == 9 {
                     rightImgVGap.constant = 5
                     self.rightImgV.isHidden = false
@@ -90,7 +90,7 @@ class JXBaseActiveCell: UITableViewCell {
                 
                 self.lb2.text = mod.createTime
                 self.lb1.text = mod.typeChName
-                self.lb3.text = mod.directionChName + "\(mod.exchangeQuota.truncate(places: 3))"
+                self.lb3.text = mod.directionChName + "\(mod.exchangeQuota.zx_truncate(places: 3))"
             case .Other:
                 rightImgVGap.constant = 0
                 self.rightImgV.isHidden = true

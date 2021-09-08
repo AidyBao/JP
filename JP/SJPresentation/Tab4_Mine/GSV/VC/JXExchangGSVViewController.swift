@@ -123,7 +123,7 @@ class JXExchangGSVViewController: ZXUIViewController {
         self.lb3.text = "每日手续费按比例用于星达人奖励"
         let numForm = NumberFormatter()
         if let feeStr = numForm.number(from: ZXUser.user.sellFee) {
-            self.sxfLB.text = "兑换手续费比例" + "\(feeStr.doubleValue.roundTo(places: 2) * 100)" + "%"
+            self.sxfLB.text = "兑换手续费比例" + "\(feeStr.doubleValue.zx_roundTo(places: 2) * 100)" + "%"
         }
         
         switch ZXUser.user.memberLevel {
@@ -140,7 +140,7 @@ class JXExchangGSVViewController: ZXUIViewController {
         default:
             break
         }
-        self.gbLB.text = "\(ZXUser.user.pointsBalance.roundTo(places: 3))"
+        self.gbLB.text = "\(ZXUser.user.pointsBalance.zx_roundTo(places: 3))"
     }
     
     //MARK: - TextField
@@ -154,7 +154,7 @@ class JXExchangGSVViewController: ZXUIViewController {
                     }else {
                         if let feeStr = numForm.number(from: ZXUser.user.sellFee) {
                             let count = gsvStr.doubleValue / (1 - feeStr.doubleValue)
-                            let divisor = count.roundTo(places: 3)
+                            let divisor = count.zx_roundTo(places: 3)
                             self.tgValueLb.text = "\(divisor)"
                         }
                     }

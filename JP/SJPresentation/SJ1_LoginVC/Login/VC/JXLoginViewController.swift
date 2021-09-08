@@ -185,7 +185,7 @@ extension JXLoginViewController {
             ZXHUD.hide(for: self.view, animated: true)
             if succ {
                 if code == ZXAPI_SUCCESS {
-                    ZXHUD.showSuccess(in: self.view, text: "登陆成功", delay: ZX.HUDDelay)
+                    ZXHUD.showSuccess(in: self.view, text: "登录成功", delay: ZX.HUDDelay)
                     self.changeContrller()
                 }else{
                     ZXHUD.showFailure(in: self.view, text: errMs!, delay: ZXHUD.DelayTime)

@@ -236,7 +236,7 @@ extension SJRegisterViewController {
             ZXHUD.hide(for: self.view, animated: true)
             if succ {
                 if code == ZXAPI_SUCCESS {
-                    ZXHUD.showSuccess(in: ZXRootController.appWindow()!, text: "注册成功,请返回登陆页面登陆", delay: ZXHUD.DelayOne)
+                    ZXHUD.showSuccess(in: ZXRootController.appWindow()!, text: "注册成功,请返回登录页面登录", delay: ZXHUD.DelayOne)
                     self.changeContrller(uModel: model)
                 }else{
                     ZXHUD.showFailure(in: ZXRootController.appWindow()!, text: errMs ?? "注册失败", delay: ZXHUD.DelayTime)

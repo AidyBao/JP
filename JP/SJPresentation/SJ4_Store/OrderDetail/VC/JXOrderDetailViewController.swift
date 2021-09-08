@@ -239,7 +239,7 @@ extension JXOrderDetailViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         if section == 1 {
-            return 120
+            return 220
         }
         return CGFloat.leastNormalMagnitude
     }

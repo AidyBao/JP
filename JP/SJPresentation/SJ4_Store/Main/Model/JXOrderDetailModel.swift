@@ -23,16 +23,16 @@ class JXOrderDetailModel: HandyJSON {
     var shippingCode: String = ""
     var shippingName: String = ""
     var couponPrice: Double   = 0
-    var orderAmount: String = ""
     var goodsList = Array<JXOrderGoodsModel>()
     var addressSize: String = ""
     
     var status: String = ""
     var priceUnit: Int = 0 //0-gsv，1-糖果，2-现金支付
-    var freight: Double = 0
+    var freight: Double = 0.00
     var deleted: Int = 0 // 1表示已取消
     
-    var totalAmount: Double = 0
+    var totalAmount: Double = 0.00
+    var orderAmount: Double = 0.00
     
     var jx_priceUnit: String {
         var str = ""

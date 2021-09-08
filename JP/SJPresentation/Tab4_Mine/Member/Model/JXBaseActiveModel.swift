@@ -147,7 +147,7 @@ class JXBaseActiveModel: HandyJSON {
         default:
             break
         }
-        return str + "\(exchangeQuota.truncate(places: 3))"
+        return str + "\(exchangeQuota.zx_truncate(places: 3))"
     }
     
     var tg_businessStr: String {

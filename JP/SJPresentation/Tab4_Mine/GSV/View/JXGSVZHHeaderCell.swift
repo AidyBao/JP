@@ -34,7 +34,7 @@ class JXGSVZHHeaderCell: UITableViewCell {
         self.typer = type
         if type == .TG {
             self.typeBtn.setTitle("兑换 GSV", for: .normal)
-            self.countLB.text = "\(ZXUser.user.pointsBalance.truncate(places: 3))"
+            self.countLB.text = "\(ZXUser.user.pointsBalance.zx_truncate(places: 3))"
             self.unitLB.text = "积分"
         }else{
             self.typeBtn.setTitle("兑换 积分", for: .normal)

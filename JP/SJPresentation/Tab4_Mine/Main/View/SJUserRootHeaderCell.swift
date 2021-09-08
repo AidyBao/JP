@@ -104,7 +104,7 @@ class SJUserRootHeaderCell: ZXUITableViewCell {
                 }
             }
         }else{
-            self.nameLable.text = "未登陆"
+            self.nameLable.text = "未登录"
         }
     }
     

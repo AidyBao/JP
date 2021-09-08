@@ -58,7 +58,12 @@ class JXMallRootWebViewController: ZXUIViewController {
     }
     
     @objc override func zx_refresh() {
+        
         if !urlStr.isEmpty {
+            if urlStr.hasPrefix("\(ZXURLConst.Web.shop)?token=") {
+                urlStr = ZXURLConst.Web.shop + "?" + "token=\(ZXToken.token.userToken)"
+            }
+            
             //只对URL中的空格字符做编码
             let set = CharacterSet(charactersIn: " ").inverted
             if let turl = urlStr.addingPercentEncoding(withAllowedCharacters: set) {

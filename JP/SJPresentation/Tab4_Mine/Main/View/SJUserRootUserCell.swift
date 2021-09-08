@@ -37,7 +37,7 @@ class SJUserRootUserCell: ZXUITableViewCell {
     }
     
     func loadData(userMod: ZXUserModel) {
-        self.tgLable.text = "积分账户：\(ZXUser.user.pointsBalance.truncate(places: 3))"
+        self.tgLable.text = "积分账户：\(ZXUser.user.pointsBalance.zx_truncate(places: 3))"
         self.GSVLab.text = ZXUser.user.gsvBalance
     }
     
