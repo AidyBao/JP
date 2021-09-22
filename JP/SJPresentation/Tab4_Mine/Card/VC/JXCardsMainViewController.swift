@@ -117,7 +117,7 @@ class JXCardsMainViewController: ZXUIViewController {
 
     lazy var vcTitles: Array<String> = {
         var list: Array<String> = []
-        list = ["任务卡","进行中","已完成"]
+        list = ["积分卡","生态卡","进行中","已完成"]
         return list
     }()
     
@@ -185,12 +185,12 @@ extension JXCardsMainViewController: JXPagingViewDelegate {
 extension JXCardsMainViewController: JXSegmentedViewDelegate {
     func segmentedView(_ segmentedView: JXSegmentedView, didSelectedItemAt index: Int) {
         let vc = vcLists[index]
-        var newIndex = 0
-        if index != 0 {
-            newIndex = index + 1
-        }
+//        var newIndex = 0
+//        if index != 0 {
+//            newIndex = index + 1
+//        }
         taskType = index
-        vc.jx_reloadAction(type: newIndex, currentIndex: self.currentIndex)
+        vc.jx_reloadAction(type: index, currentIndex: self.currentIndex)
     }
     
     func segmentedView(_ segmentedView: JXSegmentedView, didScrollSelectedItemAt index: Int) {

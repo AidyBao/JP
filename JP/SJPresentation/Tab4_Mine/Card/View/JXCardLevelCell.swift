@@ -121,6 +121,19 @@ class JXCardLevelCell: UITableViewCell {
                     self.btn.isHidden = false
                 }
                 self.LB5v.text = "\(mod.buyCount)" + "/" + "\(mod.upperLimit)"
+            case 1:
+                self.topView.isHidden = true
+                self.buttomh.constant = 0
+                self.buttomView.isHidden = true
+                self.buttomView.clipsToBounds = true
+                self.procBgView.isHidden = true
+                self.remainingLB.isHidden = true
+                if mod.buyCount == mod.upperLimit {
+                    self.btn.isHidden = true
+                }else{
+                    self.btn.isHidden = false
+                }
+                self.LB5v.text = "\(mod.buyCount)" + "/" + "\(mod.upperLimit)"
             case 2:
                 if mod.consumeStusus == 1 {
                     self.topView.isHidden = false

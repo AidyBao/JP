@@ -18,7 +18,10 @@ class JXCardListManager: NSObject {
                             zxSuccess:((_ success: Bool, _ status:Int, _ list: [JXCardLevelModel]?, _ errMsg: String?) -> Void)?,
                             zxFailed:((_ code: Int, _ errMsg: String)->Void)?) {
         var dic = Dictionary<String, Any>()
-        if consumeStusus != 0 {
+
+        if consumeStusus == 0 || consumeStusus == 1{
+            dic["currency"] = consumeStusus
+        }else{
             dic["consumeStusus"] = consumeStusus
         }
         ZXNetwork.asyncRequest(withUrl:ZXAPI.api(address: url) , params: dic, method: .post, detectHeader: true) { (succ, code, content, str, zxerror) in

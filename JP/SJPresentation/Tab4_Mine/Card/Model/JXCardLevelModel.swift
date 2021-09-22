@@ -50,6 +50,10 @@ class JXCardLevelModel: HandyJSON {
     var superior: String = ""
     var type: Int  = 0 //包类型 0：自购，1：直推奖励
     var useCount: Int = 0
+    var currency: Int = 0//币种（0:GSV,1:GV）
+    var gvPrice: String = ""//GV价格
+    var gvTotalProfit: String = ""//GV总产量
+    var gvDayProfit: String = ""//GV日产量
     
     var formatUrl: String {
         var url: String = ""

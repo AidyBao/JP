@@ -1954,16 +1954,16 @@
 			isa = PBXGroup;
 			children = (
 				6EB64A7026D73CA900834F95 /* JXCardsChangeListViewController.swift */,
-				6EB64A7126D73CA900834F95 /* JXExchangeSuccViewController.swift */,
-				6EB64A7226D73CA900834F95 /* JXCardsMainViewController+Http.swift */,
-				6EB64A7326D73CA900834F95 /* JXCardListViewController.swift */,
-				6EB64A7426D73CA900834F95 /* PagingListBaseView.swift */,
 				6EB64A7526D73CA900834F95 /* JXCardsChangeListViewController.xib */,
-				6EB64A7626D73CA900834F95 /* PagingListBaseCell.swift */,
+				6EB64A7326D73CA900834F95 /* JXCardListViewController.swift */,
 				6EB64A7726D73CA900834F95 /* JXCardListViewController.xib */,
+				6EB64A7426D73CA900834F95 /* PagingListBaseView.swift */,
+				6EB64A7626D73CA900834F95 /* PagingListBaseCell.swift */,
 				6EB64A7826D73CA900834F95 /* JXCardsMainViewController.swift */,
+				6EB64A7226D73CA900834F95 /* JXCardsMainViewController+Http.swift */,
 				6EB64A7926D73CA900834F95 /* JXExchangViewController.xib */,
 				6EB64A7A26D73CA900834F95 /* JXExchangViewController.swift */,
+				6EB64A7126D73CA900834F95 /* JXExchangeSuccViewController.swift */,
 				6EB64A7B26D73CA900834F95 /* JXExchangeSuccViewController.xib */,
 			);
 			path = VC;

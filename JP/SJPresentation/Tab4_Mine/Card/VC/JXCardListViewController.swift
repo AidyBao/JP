@@ -37,15 +37,12 @@ class JXCardListViewController: UIViewController {
     
     func jx_reloadAction(type: Int, currentIndex: Int) {
         self.currentIndex = currentIndex
-        
+        print(type)
         //防止重复请求
-        if self.taskType != 0, self.taskType != type {
+//        if self.taskType != type {
             self.taskType = type
             self.jx_requestForCardList(showHUD: false, type: type)
-        }else if self.taskType == 0 {
-            self.taskType = type
-            self.jx_requestForCardList(showHUD: false, type: type)
-        }
+//        }
     }
     
     lazy var listModel: Array<JXCardLevelModel> = {
@@ -59,7 +56,7 @@ extension JXCardListViewController {
     func jx_requestForCardList(showHUD: Bool, type: Int) {
         ZXHUD.showLoading(in: self.view, text: ZX_LOADING_TEXT, delay: 0)
         var url = ""
-        if type == 0 {
+        if type == 0 || type == 1 {
             url = ZXAPIConst.Card.cardList
         }else{
             url = ZXAPIConst.Card.cardfinish
@@ -132,6 +129,8 @@ extension JXCardListViewController: UITableViewDelegate {
         switch taskType {
         case 0:
             cellH = 190
+        case 1:
+            cellH = 190
         case 2:
             cellH = 200
         case 3:
@@ -152,7 +151,7 @@ extension JXCardListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if taskType == 0 {
+        if taskType == 0 || taskType == 1 {
             if ZXUser.user.tradePassword.isEmpty {
                 ZXAlertUtils.showAlert(wihtTitle: "温馨提示", message: "您还未设置交易密码，暂无法进行此项交易！", buttonTexts: ["取消","去设置"]) { (index) in
                     if index == 1 {
