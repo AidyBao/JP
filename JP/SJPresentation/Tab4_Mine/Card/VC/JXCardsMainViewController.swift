@@ -91,11 +91,11 @@ class JXCardsMainViewController: ZXUIViewController {
         self.currentIndex = 1
         let vc = vcLists[taskType]
         
-        var newType: Int = 0
-        if taskType != 0 {
-            newType = taskType + 1
-        }
-        vc.jx_reloadAction(type: newType, currentIndex: self.currentIndex)
+//        var newType: Int = 0
+//        if taskType != 0 {
+//            newType = taskType + 1
+//        }
+        vc.jx_reloadAction(type: taskType, currentIndex: self.currentIndex)
     }
 
     

@@ -166,7 +166,7 @@ extension JXCardListViewController: UITableViewDelegate {
             if model.upperLimit == model.buyCount {
                 ZXHUD.showFailure(in: ZXRootController.appWindow() ?? self.view, text: "已达购买上限", delay: ZX.HUDDelay)
             }else{
-                JXExchangViewController.show(superv: self, model: model) {
+                JXExchangViewController.show(superv: self, type: self.taskType, model: model) {
                     if model.level > 2 {//固定经验值100
                         JXExchangeSuccViewController.show(superv: self)
                         self.jx_reloadAction(type: self.taskType, currentIndex: self.currentIndex)

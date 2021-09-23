@@ -21,6 +21,7 @@
                 <outlet property="gsvView" destination="gtz-pk-fXp" id="9HO-Gm-x8Z"/>
                 <outlet property="passTF" destination="5Ru-GN-XBw" id="mRg-pc-77D"/>
                 <outlet property="passTFView" destination="qqc-F7-Dg5" id="Hpn-Y4-9zs"/>
+                <outlet property="plusLB" destination="XRh-Q8-MA6" id="oMS-sj-hd8"/>
                 <outlet property="tgT" destination="T2J-lh-rqe" id="4Qe-c3-wkd"/>
                 <outlet property="tgV" destination="nFn-nh-HT3" id="NiD-Ui-axF"/>
                 <outlet property="tgView" destination="dtL-hs-V76" id="iZU-QW-rGI"/>
@@ -117,10 +118,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtz-pk-fXp">
-                                    <rect key="frame" x="115" y="34.5" width="90" height="65.5"/>
+                                    <rect key="frame" x="146" y="34.5" width="90" height="65.5"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GSV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nze-Uf-vBR">
-                                            <rect key="frame" x="28" y="7.5" width="34" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生态积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nze-Uf-vBR">
+                                            <rect key="frame" x="10.5" y="7.5" width="69.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -154,6 +155,12 @@
                                         <constraint firstItem="GKD-M0-SuO" firstAttribute="leading" secondItem="gtz-pk-fXp" secondAttribute="leading" constant="2" id="y6D-8i-vRb"/>
                                     </constraints>
                                 </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRh-Q8-MA6">
+                                    <rect key="frame" x="115" y="51.5" width="16" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -163,10 +170,12 @@
                                 <constraint firstItem="gtz-pk-fXp" firstAttribute="top" secondItem="Ndg-N5-MYO" secondAttribute="bottom" constant="10" id="Xcj-oC-Yia"/>
                                 <constraint firstItem="dtL-hs-V76" firstAttribute="top" secondItem="Ndg-N5-MYO" secondAttribute="bottom" constant="10" id="Y1d-u1-dqy"/>
                                 <constraint firstAttribute="height" constant="110" id="bSd-YS-xCp"/>
+                                <constraint firstItem="XRh-Q8-MA6" firstAttribute="centerY" secondItem="dtL-hs-V76" secondAttribute="centerY" id="dGd-Cs-i3N"/>
                                 <constraint firstItem="Ndg-N5-MYO" firstAttribute="leading" secondItem="f83-TE-CIE" secondAttribute="trailing" constant="5" id="eBT-zw-NpB"/>
                                 <constraint firstAttribute="bottom" secondItem="dtL-hs-V76" secondAttribute="bottom" constant="10" id="hUA-Ay-sXA"/>
+                                <constraint firstItem="XRh-Q8-MA6" firstAttribute="leading" secondItem="dtL-hs-V76" secondAttribute="trailing" constant="15" id="ibD-Ct-5X7"/>
                                 <constraint firstItem="dtL-hs-V76" firstAttribute="leading" secondItem="TDq-mK-eKC" secondAttribute="leading" constant="10" id="ojB-KI-Q7T"/>
-                                <constraint firstItem="gtz-pk-fXp" firstAttribute="leading" secondItem="dtL-hs-V76" secondAttribute="trailing" constant="15" id="rKm-wx-W0V"/>
+                                <constraint firstItem="gtz-pk-fXp" firstAttribute="leading" secondItem="XRh-Q8-MA6" secondAttribute="trailing" constant="15" id="qeX-zj-tf9"/>
                                 <constraint firstItem="Ndg-N5-MYO" firstAttribute="centerY" secondItem="f83-TE-CIE" secondAttribute="centerY" id="sE6-W1-J4f"/>
                             </constraints>
                         </view>

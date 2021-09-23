@@ -27,15 +27,18 @@ class JXExchangViewController: ZXBPushRootViewController {
     @IBOutlet weak var passTF: UITextField!
     @IBOutlet weak var buyBtn: UIButton!
     @IBOutlet weak var bgViewCenter: NSLayoutConstraint!
+    @IBOutlet weak var plusLB: UILabel!
     var zxcallback: JXExchangViewCallback? = nil
     
     var model: JXCardLevelModel? = nil
-    var type: Int = 0
+    var buyType: Int = 0
     var ids: String = ""
+    var type: Int   = 0
     
-    static func show(superv: UIViewController, model: JXCardLevelModel?, callback: JXExchangViewCallback?) {
+    static func show(superv: UIViewController, type: Int, model: JXCardLevelModel?, callback: JXExchangViewCallback?) {
         let vc = JXExchangViewController()
         vc.zxcallback = callback
+        vc.type = type
         vc.model = model
         superv.present(vc, animated: true, completion: nil)
         
@@ -90,16 +93,27 @@ class JXExchangViewController: ZXBPushRootViewController {
         
         self.gsvView.layer.cornerRadius = 10
         self.gsvView.layer.masksToBounds = true
-        self.gsvView.layer.borderWidth = 1
-        self.gsvView.layer.borderColor = UIColor.zx_textColorMark.cgColor
-        self.gsvView.backgroundColor = UIColor.white
-        self.gsvView.isHidden = true
+        if type == 0 {
+            self.plusLB.isHidden = true
+            self.gsvView.layer.borderWidth = 1
+            self.gsvView.layer.borderColor = UIColor.zx_textColorMark.cgColor
+        }else{
+            self.plusLB.isHidden = false
+        }
+       
+        if type == 1 {
+            self.gsvView.isHidden = false
+            self.gsvView.backgroundColor = UIColor.zx_tintColor
+        }else{
+            self.gsvView.isHidden = true
+            self.gsvView.backgroundColor = UIColor.white
+        }
         self.gsvView.clipsToBounds = true
         
         if let mod = model {
             self.ids = "\(mod.id)"
             self.tgV.text = mod.gsvPrice + "积分"
-            self.GSVV.text = mod.gsvPrice + "GSV"
+            self.GSVV.text = mod.gvPrice + "生态积分"
         }
     }
     
@@ -131,16 +145,19 @@ class JXExchangViewController: ZXBPushRootViewController {
     @IBAction func buyType(_ sender: UIButton) {
         self.passTF.resignFirstResponder()
         if sender.tag == 530001 {
-            self.type = 0
+            self.buyType = 0
             self.tgView.backgroundColor = UIColor.zx_tintColor
             self.tgView.layer.borderColor = UIColor.white.cgColor
-            self.gsvView.backgroundColor = UIColor.white
-            self.gsvView.layer.borderColor = UIColor.zx_textColorMark.cgColor
-            
+            if type == 0 {
+                self.gsvView.backgroundColor = UIColor.white
+                self.gsvView.layer.borderColor = UIColor.zx_textColorMark.cgColor
+            }
         }else{
-            self.type = 1
-            self.tgView.backgroundColor = UIColor.white
-            self.tgView.layer.borderColor = UIColor.zx_textColorMark.cgColor
+            self.buyType = 1
+            if type == 0 {
+                self.tgView.backgroundColor = UIColor.white
+                self.tgView.layer.borderColor = UIColor.zx_textColorMark.cgColor
+            }
             self.gsvView.backgroundColor = UIColor.zx_tintColor
             self.gsvView.layer.borderColor = UIColor.white.cgColor
         }
@@ -161,7 +178,7 @@ class JXExchangViewController: ZXBPushRootViewController {
     
     func jx_exchange(passw: String) {
         var url = ""
-        if type == 0 {
+        if buyType == 0 {
             url = ZXAPIConst.Card.tgExchangTask
         }else{
             url = ZXAPIConst.Card.gsvExchangTask

@@ -122,6 +122,7 @@ class JXCardLevelCell: UITableViewCell {
                 }
                 self.LB5v.text = "\(mod.buyCount)" + "/" + "\(mod.upperLimit)"
             case 1:
+                self.LB1v.text = mod.pointsPrice + "积分" + "+" + mod.gvPrice + "生态积分"
                 self.topView.isHidden = true
                 self.buttomh.constant = 0
                 self.buttomView.isHidden = true
