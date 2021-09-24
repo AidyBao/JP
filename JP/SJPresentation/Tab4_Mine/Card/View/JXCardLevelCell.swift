@@ -103,8 +103,14 @@ class JXCardLevelCell: UITableViewCell {
         if let mod = model {
             self.imgV.kf.setImage(with: URL(string: mod.formatUrl))
             self.LB1v.text = mod.pointsPrice + "积分"
-            self.LB2v.text = mod.totalProfit
-            self.LB3v.text = mod.dayProfit
+            
+            if mod.currency == 0 {
+                self.LB2v.text = mod.totalProfit
+                self.LB3v.text = mod.dayProfit
+            }else{
+                self.LB2v.text = mod.gvTotalProfit
+                self.LB3v.text = mod.gvDayProfit
+            }
             self.LB4v.text = mod.activity
             self.LB6v.text = "\(mod.cycle)"
             switch type {
@@ -123,6 +129,7 @@ class JXCardLevelCell: UITableViewCell {
                 self.LB5v.text = "\(mod.buyCount)" + "/" + "\(mod.upperLimit)"
             case 1:
                 self.LB1v.text = mod.pointsPrice + "积分" + "+" + mod.gvPrice + "生态积分"
+
                 self.topView.isHidden = true
                 self.buttomh.constant = 0
                 self.buttomView.isHidden = true
