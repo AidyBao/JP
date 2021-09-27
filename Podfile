@@ -25,6 +25,6 @@ target 'JP' do
   	pod 'ZFPlayer/ControlView'
   	pod 'ZFPlayer/AVPlayer'
   	pod 'AliyunOSSiOS'
-  	pod 'MCAssetExportSession'
+  	#pod 'MCAssetExportSession'
 
 end
