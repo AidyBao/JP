@@ -21,6 +21,8 @@ class JXTaskThreeCell: UITableViewCell {
     @IBOutlet weak var lb6: UILabel!
     @IBOutlet weak var btn1: UIButton!
     @IBOutlet weak var btn2: UIButton!
+    @IBOutlet weak var v1: UIView!
+    @IBOutlet weak var v2: UIView!
     
     fileprivate var timeModel: JXActivityInfoModel? = nil
     fileprivate var likeModel: JXActivityInfoModel? = nil
@@ -69,6 +71,9 @@ class JXTaskThreeCell: UITableViewCell {
         self.btn2.titleLabel?.font = UIFont.zx_bodyFont(14)
         self.btn2.setTitleColor(UIColor.white, for: .normal)
         self.btn2.setTitle("再玩一次", for: .normal)
+        
+        v2.isHidden = true
+        v2.clipsToBounds = true
     }
     
     func loadData(dataList: Array<JXActivityInfoModel?>) {
