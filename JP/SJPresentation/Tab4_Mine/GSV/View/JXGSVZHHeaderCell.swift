@@ -44,7 +44,7 @@ class JXGSVZHHeaderCell: UITableViewCell {
             self.jfUnitLB.text = "积分"
             
             self.gvCountLB.text = "\(ZXUser.user.gvBalance.zx_truncate(places: 3))"
-            self.gvUnitLB.text = "生态积分"
+            self.gvUnitLB.text = "生态卡收益"
         }else{
             self.typeBtn.setTitle("兑换 积分", for: .normal)
             self.jfCountLB.text = ZXUser.user.gsvBalance

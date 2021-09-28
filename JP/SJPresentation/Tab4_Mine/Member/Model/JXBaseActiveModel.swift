@@ -21,7 +21,7 @@ class JXBaseActiveModel: HandyJSON {
     var isDeduct: Int = 0
 
     var exchangeQuota: Double   = 0
-    var accountType: Int        = 0
+    var accountType: Int        = 0//0代表积分，3代表生态积分
     var direction: Int          = 0
     var businessType: Int       = 0
     var businessId: String      = ""

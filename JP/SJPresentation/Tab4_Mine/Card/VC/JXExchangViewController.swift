@@ -112,7 +112,7 @@ class JXExchangViewController: ZXBPushRootViewController {
         
         if let mod = model {
             self.ids = "\(mod.id)"
-            self.tgV.text = mod.gsvPrice + "积分"
+            self.tgV.text = mod.pointsPrice + "积分"
             self.GSVV.text = mod.gvPrice + "生态积分"
         }
     }

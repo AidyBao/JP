@@ -71,7 +71,12 @@ class JXBaseActiveCell: UITableViewCell {
             case .TG:
                 self.unitLB.isHidden = false
                 unitLBGap.constant = 5
-                self.unitLB.text = "积分"
+                if mod.accountType == 3 {
+                    self.unitLB.text = "生态积分"
+                }else{
+                    self.unitLB.text = "积分"
+                }
+                
                 self.lb2.text = mod.createTime
                 //self.lb1.text = mod.tg_businessStr
                 //self.lb3.text = mod.tg_exchangeQuotaStr
