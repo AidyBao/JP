@@ -343,21 +343,21 @@ extension JXTaskRootViewController {
             if succ {
                 if !minetask {
                     ZXHUD.showLoading(in: self.view, text: "", delay: ZXHUD.DelayTime)
-                    JXActivityManager.jx_getProfit(url: ZXAPIConst.Activity.getProfit) { succ, code, count, msg in
+                    JXActivityManager.jx_getProfit(url: ZXAPIConst.Activity.getProfit) { succ, code, model, msg in
                         ZXHUD.hide(for: self.view, animated: true)
                         if succ {
 //                            ZXGlobalData.isFistGetEarnings = true
-                            if !count.isEmpty {
-                                JXTaskFinishViewController.show(superV: self, succ: true, count: count)
+                            if let mod = model {
+                                JXTaskFinishViewController.show(superV: self, succ: true, model: mod)
                             }else{
-                                JXTaskFinishViewController.show(superV: self, succ: false)
+                                JXTaskFinishViewController.show(superV: self, succ: false, model: nil)
                             }
                         }else{
-                            JXTaskFinishViewController.show(superV: self, succ: false)
+                            JXTaskFinishViewController.show(superV: self, succ: false, model: nil)
                         }
                     } zxFailed: { code, msg in
                         ZXHUD.hide(for: self.view, animated: true)
-                        JXTaskFinishViewController.show(superV: self, succ: false)
+                        JXTaskFinishViewController.show(superV: self, succ: false, model: nil)
                     }
                 }
             }

@@ -20,6 +20,7 @@ class JXCardHeaderView: UIView {
     @IBOutlet weak var bgview3: UIView!
     @IBOutlet weak var days: UILabel!
     @IBOutlet weak var tgcount: UILabel!
+    @IBOutlet weak var gvCount: UILabel!
     @IBOutlet weak var noticView: UIView!
     @IBOutlet weak var gobtn: UIButton!
     fileprivate var winnerList: ZXWinnerScrollView!
@@ -36,7 +37,7 @@ class JXCardHeaderView: UIView {
     func loaddata(notices: Array<JXCardNoticeModel>) {
         self.days.text = "连续答题:" + ZXUser.user.continDay + "天"
         self.tgcount.text = "积分日产量:" + "\(ZXUser.user.todayPoints.zx_truncate(places: 3))" + "积分"
-        
+        self.gvCount.text = "生态卡收益:" + "\(ZXUser.user.todayGv.zx_truncate(places: 3))" + "积分"
         self.winnerList.reloadData(notices)
     }
     
@@ -54,6 +55,9 @@ class JXCardHeaderView: UIView {
         
         self.tgcount.font = UIFont.zx_bodyFont
         self.tgcount.textColor = UIColor.zx_textColorBody
+        
+        self.gvCount.font = UIFont.zx_bodyFont
+        self.gvCount.textColor = UIColor.zx_textColorBody
         
         self.noticView.backgroundColor = UIColor.white
         self.noticView.layer.cornerRadius = self.noticView.bounds.height * 0.5

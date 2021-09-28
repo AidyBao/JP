@@ -559,6 +559,7 @@
 		6ED82E2226DCB2B800921823 /* BUAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6ED82E1726DCB2B800921823 /* BUAdSDK.bundle */; };
 		6ED82E2326DCB2B800921823 /* libquBianSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED82E1B26DCB2B800921823 /* libquBianSDK.a */; };
 		8726154FEDDB6B2210DD6EA8 /* Pods_JP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFDFEF0135F9FCB52F33E5E /* Pods_JP.framework */; };
+		CE98A4842702A77700BEA83A /* JXSYModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98A4832702A77700BEA83A /* JXSYModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1160,6 +1161,7 @@
 		6ED82E1C26DCB2B800921823 /* QUBIanSDKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QUBIanSDKConfig.h; sourceTree = "<group>"; };
 		6ED82E1D26DCB2B800921823 /* QUBIanH5ActiveAdCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QUBIanH5ActiveAdCenter.h; sourceTree = "<group>"; };
 		7C1E7BB4D620FDD3345B48FF /* Pods-JP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JP.release.xcconfig"; path = "Target Support Files/Pods-JP/Pods-JP.release.xcconfig"; sourceTree = "<group>"; };
+		CE98A4832702A77700BEA83A /* JXSYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXSYModel.swift; sourceTree = "<group>"; };
 		DBFDFEF0135F9FCB52F33E5E /* Pods_JP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1623,6 +1625,7 @@
 				6EB64A2C26D73CA900834F95 /* JXTaskExprInfo.swift */,
 				6EB64A2D26D73CA900834F95 /* JXActivityBannerModel.swift */,
 				6EB64A2E26D73CA900834F95 /* JXActivityInfoModel.swift */,
+				CE98A4832702A77700BEA83A /* JXSYModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2209,6 +2212,7 @@
 			children = (
 				6EB64AD526D73CA900834F95 /* VC */,
 				6EB64AE226D73CAA00834F95 /* View */,
+				6EB64AD926D73CA900834F95 /* ModelView */,
 			);
 			path = GSV;
 			sourceTree = "<group>";
@@ -2218,14 +2222,13 @@
 			children = (
 				6EB64AD626D73CA900834F95 /* JXDirectEarningsViewController.swift */,
 				6EB64AD726D73CA900834F95 /* JXExchangTgViewController.swift */,
+				6EB64AE026D73CAA00834F95 /* JXGSVZHViewController.swift */,
 				6EB64AD826D73CA900834F95 /* JXGSVZHViewController.xib */,
-				6EB64AD926D73CA900834F95 /* ModelView */,
 				6EB64ADB26D73CAA00834F95 /* JXExchangTgViewController.xib */,
 				6EB64ADC26D73CAA00834F95 /* JXExchangGSVViewController.swift */,
 				6EB64ADD26D73CAA00834F95 /* JXExchangeLimitViewController.swift */,
 				6EB64ADE26D73CAA00834F95 /* JXExchangeLimitViewController.xib */,
 				6EB64ADF26D73CAA00834F95 /* JXDirectEarningsViewController.xib */,
-				6EB64AE026D73CAA00834F95 /* JXGSVZHViewController.swift */,
 				6EB64AE126D73CAA00834F95 /* JXExchangGSVViewController.xib */,
 			);
 			path = VC;
@@ -2242,13 +2245,13 @@
 		6EB64AE226D73CAA00834F95 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6EB64AE326D73CAA00834F95 /* JXGSVZHHeaderCell.xib */,
+				6EB64AE926D73CAA00834F95 /* JXLimitHeaderCell.swift */,
 				6EB64AE426D73CAA00834F95 /* JXLimitHeaderCell.xib */,
+				6EB64AE726D73CAA00834F95 /* JXGSVZHHeaderCell.swift */,
+				6EB64AE326D73CAA00834F95 /* JXGSVZHHeaderCell.xib */,
+				6EB64AE826D73CAA00834F95 /* JXGSVZHHeaderView.swift */,
 				6EB64AE526D73CAA00834F95 /* JXGSVZHHeaderView.xib */,
 				6EB64AE626D73CAA00834F95 /* JXLimitExplainCell.xib */,
-				6EB64AE726D73CAA00834F95 /* JXGSVZHHeaderCell.swift */,
-				6EB64AE826D73CAA00834F95 /* JXGSVZHHeaderView.swift */,
-				6EB64AE926D73CAA00834F95 /* JXLimitHeaderCell.swift */,
 				6EB64AEA26D73CAA00834F95 /* JXLimitExplainCell.swift */,
 			);
 			path = View;
@@ -3854,6 +3857,7 @@
 				6EB64EBE26D73CAC00834F95 /* ZXAssetTool.swift in Sources */,
 				6EB64ED926D73CAC00834F95 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				6EB64CED26D73CAB00834F95 /* JXKillViewController.swift in Sources */,
+				CE98A4842702A77700BEA83A /* JXSYModel.swift in Sources */,
 				6EB64EDA26D73CAC00834F95 /* ZXSaveButton.swift in Sources */,
 				6EB64E4226D73CAC00834F95 /* JXOrderDetailFooter.swift in Sources */,
 				6EB64DBC26D73CAB00834F95 /* JXProblemTypeCell.swift in Sources */,
@@ -4297,10 +4301,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.3.3;
-				DEVELOPMENT_TEAM = S5TCHNZK6J;
+				DEVELOPMENT_TEAM = 2WH8MU7QMC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JP/JXFrameworks/Aliyun",
@@ -4402,7 +4406,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fowit.gold.local;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = youxiDis;
 				SWIFT_OBJC_BRIDGING_HEADER = "JP/JP-bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -4415,10 +4419,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.3.3;
-				DEVELOPMENT_TEAM = S5TCHNZK6J;
+				DEVELOPMENT_TEAM = 2WH8MU7QMC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JP/JXFrameworks/Aliyun",
@@ -4520,7 +4524,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fowit.gold.local;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = youxiDis;
 				SWIFT_OBJC_BRIDGING_HEADER = "JP/JP-bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

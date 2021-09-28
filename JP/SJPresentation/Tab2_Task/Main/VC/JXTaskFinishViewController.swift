@@ -16,12 +16,12 @@ class JXTaskFinishViewController: ZXBPushRootViewController {
     @IBOutlet weak var lb1: UILabel!
     @IBOutlet weak var lb2: UILabel!
     fileprivate var succ: Bool = false
-    fileprivate var count: String = ""
+    fileprivate var model: JXSYModel?
     
-    static func show(superV: UIViewController, succ: Bool, count: String = "") {
+    static func show(superV: UIViewController, succ: Bool, model: JXSYModel?) {
         let vc = JXTaskFinishViewController()
         vc.succ = succ
-        vc.count = count
+        vc.model = model
         superV.present(vc, animated: true, completion: nil)
     }
     
@@ -32,11 +32,17 @@ class JXTaskFinishViewController: ZXBPushRootViewController {
         
         self.lb1.font = UIFont.zx_bodyFont
         self.lb1.textColor = UIColor.white
-        
+
+
         self.lb2.font = UIFont.zx_bodyFont
         self.lb2.textColor = UIColor.white
-        self.lb2.text = count
         
+        if let mod = model {
+            self.lb2.text = "获得生态卡积分：\(mod.todayGvProfit.zx_truncate(places: 3))"
+            self.lb1.text = "获得积分：\(mod.todayPointsProfit.zx_truncate(places: 3))"
+            
+        }
+
         if succ {
             imgV.image = UIImage(named: "jx_gettg_succ")
             self.lb1.isHidden = false

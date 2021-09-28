@@ -93,6 +93,9 @@ class ZXUserModel: HandyJSON {
     var mineDate: String         = ""
     var todayPoints: Double         = 0.0
     var pointsBalance: Double         = 0.0
+    var gvBalance: Double         = 0.0
+    var todayGv: Double         = 0.0
+    var lockGvBalance: Double         = 0.0
     var superior: String         = ""
     var pointsSellQuota: String         = ""
     var lockGsvBalance: String         = ""

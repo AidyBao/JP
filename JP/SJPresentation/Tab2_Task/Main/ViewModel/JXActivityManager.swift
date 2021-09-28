@@ -38,18 +38,19 @@ class JXActivityManager: NSObject {
      @param
      */
     static func jx_getProfit(url: String,
-                            zxSuccess:((_ success: Bool, _ status:Int, _ count: String, _ errMsg: String?) -> Void)?,
+                            zxSuccess:((_ success: Bool, _ status:Int, _ model: JXSYModel?, _ errMsg: String?) -> Void)?,
                                   zxFailed:((_ code: Int, _ errMsg: String)->Void)?) {
         ZXNetwork.asyncRequest(withUrl:ZXAPI.api(address: url) , params: nil, method: .post, detectHeader: true) { (succ, code, content, str, zxerror) in
             if succ {
                 if code == ZXAPI_SUCCESS {
-                    if let data = content["data"] as? String {
-                        zxSuccess?(true,code,data,"")
+                    if let data = content["data"] as? Dictionary<String, Any> {
+                        let model = JXSYModel.deserialize(from: data)
+                        zxSuccess?(true,code,model,"")
                     } else {
-                        zxSuccess?(true,code,"",zxerror?.errorMessage ?? "未知错误")
+                        zxSuccess?(true,code,nil,zxerror?.errorMessage ?? "未知错误")
                     }
                 }else{
-                    zxSuccess?(true,code,"",zxerror?.errorMessage ?? "未知错误")
+                    zxSuccess?(true,code,nil,zxerror?.errorMessage ?? "未知错误")
                 }
             }else{
                 zxFailed?(code,zxerror?.errorMessage ?? "网络连接错误")

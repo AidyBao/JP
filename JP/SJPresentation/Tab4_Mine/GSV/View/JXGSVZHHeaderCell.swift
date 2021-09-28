@@ -13,8 +13,12 @@ protocol JXGSVZHHeaderCellDelegate: NSObjectProtocol {
 
 class JXGSVZHHeaderCell: UITableViewCell {
     
-    @IBOutlet weak var countLB: UILabel!
-    @IBOutlet weak var unitLB: UILabel!
+    @IBOutlet weak var jfCountLB: UILabel!
+    @IBOutlet weak var jfUnitLB: UILabel!
+    
+    @IBOutlet weak var gvCountLB: UILabel!
+    @IBOutlet weak var gvUnitLB: UILabel!
+    
     @IBOutlet weak var typeBtn: UIButton!
     fileprivate var typer: JXBaseActive = .Other
     weak var delegate: JXGSVZHHeaderCellDelegate? = nil
@@ -28,18 +32,23 @@ class JXGSVZHHeaderCell: UITableViewCell {
         self.typeBtn.layer.cornerRadius = self.typeBtn.frame.height * 0.5
         self.typeBtn.layer.masksToBounds = true
         self.typeBtn.isHidden = true
+        
+        
     }
     
     func loadData(type: JXBaseActive) {
         self.typer = type
         if type == .TG {
             self.typeBtn.setTitle("兑换 GSV", for: .normal)
-            self.countLB.text = "\(ZXUser.user.pointsBalance.zx_truncate(places: 3))"
-            self.unitLB.text = "积分"
+            self.jfCountLB.text = "\(ZXUser.user.pointsBalance.zx_truncate(places: 3))"
+            self.jfUnitLB.text = "积分"
+            
+            self.gvCountLB.text = "\(ZXUser.user.gvBalance.zx_truncate(places: 3))"
+            self.gvUnitLB.text = "生态积分"
         }else{
             self.typeBtn.setTitle("兑换 积分", for: .normal)
-            self.countLB.text = ZXUser.user.gsvBalance
-            self.unitLB.text = "GSV"
+            self.jfCountLB.text = ZXUser.user.gsvBalance
+            self.jfCountLB.text = "GSV"
         }
     }
     
