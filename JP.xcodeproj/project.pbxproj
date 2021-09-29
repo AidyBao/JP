@@ -1447,11 +1447,11 @@
 			isa = PBXGroup;
 			children = (
 				6EB649EC26D73CA900834F95 /* JXVideoDescriptionViewController.swift */,
+				6EB649F126D73CA900834F95 /* JXVideoDescriptionViewController.xib */,
 				6EB649ED26D73CA900834F95 /* JXVideoUploadViewController.xib */,
+				6EB649F026D73CA900834F95 /* JXVideoUploadViewController.swift */,
 				6EB649EE26D73CA900834F95 /* JXVideoListViewController.swift */,
 				6EB649EF26D73CA900834F95 /* JXVideoListViewController.xib */,
-				6EB649F026D73CA900834F95 /* JXVideoUploadViewController.swift */,
-				6EB649F126D73CA900834F95 /* JXVideoDescriptionViewController.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";

@@ -12,11 +12,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="3Hp-cK-8az" customClass="JXCardHeaderView" customModule="JP" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="305"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fef-Zh-mZY">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="305"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZD-6S-eb7">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
@@ -203,7 +203,7 @@ for steady income .</string>
                 <outlet property="noticView" destination="wrO-lW-O54" id="YGu-od-bqN"/>
                 <outlet property="tgcount" destination="zqb-hC-ous" id="UeV-vb-0Gb"/>
             </connections>
-            <point key="canvasLocation" x="-272.46376811594206" y="376.67410714285711"/>
+            <point key="canvasLocation" x="-272.46376811594206" y="378.01339285714283"/>
         </view>
     </objects>
     <resources>

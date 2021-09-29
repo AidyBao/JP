@@ -17,7 +17,7 @@ class JXCardsMainViewController: ZXUIViewController {
     var segmentedViewDataSource: JXSegmentedTitleDataSource!
     var segmentedView: JXSegmentedView!
     var vcLists = Array<JXCardListViewController>()
-    var JXTableHeaderViewHeight: Int = 250
+    var JXTableHeaderViewHeight: Int = 280
     var JXheightForHeaderInSection: Int = 40
     var currentIndex:NSInteger = 1
     var taskType: Int = 0
