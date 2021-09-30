@@ -32,7 +32,6 @@ class JXCardLevelCell: UITableViewCell {
     @IBOutlet weak var procBgView: JXProcessView!
     @IBOutlet weak var buttomh: NSLayoutConstraint!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.contentView.backgroundColor = UIColor.zx_lightGray
@@ -154,8 +153,11 @@ class JXCardLevelCell: UITableViewCell {
                 
                 self.remainingLB.text = "剩余" + "\(mod.cycle - mod.useCount)" + "天"
                 
-                let value: Float = Float(mod.useCount)/Float(mod.cycle)
-                procBgView.setProgress(value + procBgView.progress, animated: true)
+                //导致服用
+//                let value: Float = Float(mod.useCount)/Float(mod.cycle)
+//                procBgView.setProgress(value + procBgView.progress, animated: true)
+                //将值放在model中防止复用
+                procBgView.setProgress(mod.proceeValue, animated: true)
                 self.LB5v.text = "\(mod.upperLimit)"
             case 3:
                 self.topView.isHidden = false

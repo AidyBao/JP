@@ -116,6 +116,10 @@ extension JXCardListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        var cell: JXCardLevelCell = tableView.cellForRow(at: indexPath) as! JXCardLevelCell
+//        if cell == nil {
+//        let cell: JXCardLevelCell = JXCardLevelCell(style: .default, reuseIdentifier: JXCardLevelCell.reuseIdentifier)
+//        }
         let cell: JXCardLevelCell = tableView.dequeueReusableCell(withIdentifier: JXCardLevelCell.reuseIdentifier, for: indexPath) as! JXCardLevelCell
         let model = self.listModel[indexPath.section]
         cell.loadData(model: model, type: self.taskType)

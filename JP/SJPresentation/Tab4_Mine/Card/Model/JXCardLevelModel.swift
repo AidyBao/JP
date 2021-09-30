@@ -55,6 +55,10 @@ class JXCardLevelModel: HandyJSON {
     var gvTotalProfit: String = ""//GV总产量
     var gvDayProfit: String = ""//GV日产量
     
+    var proceeValue: Float {
+        return Float(useCount)/Float(cycle)
+    }
+    
     var formatUrl: String {
         var url: String = ""
         if !iconUrl.isEmpty {

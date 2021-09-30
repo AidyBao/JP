@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZXEidtAddressViewController" customModule="gold" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZXEidtAddressViewController" customModule="JP" customModuleProvider="target">
             <connections>
                 <outlet property="addrText" destination="1j9-YN-uQz" id="Kx6-60-VWb"/>
                 <outlet property="confirmBtn" destination="xhU-Ff-Vrk" id="gDF-Oa-qWa"/>
@@ -35,7 +35,7 @@
                                 <constraint firstAttribute="height" constant="1" id="MUs-ni-fYb"/>
                             </constraints>
                         </view>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="姓名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="455-kz-0sx" customClass="ZXUITextField" customModule="gold" customModuleProvider="target">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="姓名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="455-kz-0sx" customClass="ZXUITextField" customModule="JP" customModuleProvider="target">
                             <rect key="frame" x="24" y="6" width="313" height="44"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits"/>
@@ -66,7 +66,7 @@
                                 <constraint firstAttribute="height" constant="1" id="Yd8-vi-sw3"/>
                             </constraints>
                         </view>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="电话" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cVV-JF-7iM" customClass="ZXUITextField" customModule="gold" customModuleProvider="target">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="电话" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cVV-JF-7iM" customClass="ZXUITextField" customModule="JP" customModuleProvider="target">
                             <rect key="frame" x="24" y="6" width="327" height="44"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -97,7 +97,7 @@
                                 <constraint firstAttribute="height" constant="1" id="4kx-zV-oqu"/>
                             </constraints>
                         </view>
-                        <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1j9-YN-uQz" customClass="ZXUITextField" customModule="gold" customModuleProvider="target">
+                        <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1j9-YN-uQz" customClass="ZXUITextField" customModule="JP" customModuleProvider="target">
                             <rect key="frame" x="24" y="6" width="304" height="44"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <textInputTraits key="textInputTraits"/>
@@ -147,7 +147,7 @@
                                 <constraint firstAttribute="height" constant="1" id="5nv-aI-9KB"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTV-3y-g0I" userLabel="Detail Addr View" customClass="ZXTextView" customModule="gold" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTV-3y-g0I" userLabel="Detail Addr View" customClass="ZXTextView" customModule="JP" customModuleProvider="target">
                             <rect key="frame" x="21" y="1" width="330" height="54"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -200,7 +200,7 @@
                         <constraint firstAttribute="trailing" secondItem="Zl5-a1-teB" secondAttribute="trailing" id="uoM-jW-x3A"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhU-Ff-Vrk" customClass="ZXSaveButton" customModule="gold" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhU-Ff-Vrk" customClass="ZXSaveButton" customModule="JP" customModuleProvider="target">
                     <rect key="frame" x="24" y="285" width="327" height="40"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
